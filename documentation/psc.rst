@@ -145,6 +145,7 @@ Les membres fondateurs sont :
 * Yves Jacolin
 
 Les membres suivants ont été ajoutés à la PSC, après discussion et consensus :
+
 * François Van Der Biest
 * Pierre Mauduit
 * Sylvain Lesage
