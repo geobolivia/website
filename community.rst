@@ -60,6 +60,7 @@ Qui utilise geOrchestra ?
 * Infrastructure de Données Spatiales Bolivienne via `GeoBolivia <http://www.geo.gob.bo/>`_,
 * `GIP Bretagne Environnement <http://cartographie.bretagne-environnement.org/>`_,
 * Projet `VIDAE <http://geowww.agrocampus-ouest.fr/web/?page_id=103>`_ porté par l'UMR SAS INRA - Agrocampus Ouest à Rennes et l'UMR LISAH INRA - Supagro à Montpellier,
+* Laboratoire `Geomer <http://www-iuem.univ-brest.fr/recherche/equipes/geomer>`_ de l'Institut Universitaire Européen de la Mer (IUEM),
 * INRA Champenoux,
 * et bien d'autres ...
 
