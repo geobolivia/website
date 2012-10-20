@@ -7,6 +7,12 @@ Communauté
 Le projet geOrchestra est un projet communautaire. 
 Toutes les formes de contributions sont les bienvenues, que ce soit via la participation aux listes de discussion, la rédaction de documentation, les contributions au code (sous forme de patchs), ou encore par le financement de nouvelles fonctionnalités.
 
+Canal IRC
+==========
+
+Rejoignez nous sur #georchestra (freenode) !
+
+
 Listes de diffusion
 ====================
 
