@@ -15,12 +15,12 @@ Code source
 
 Le code source est mis à disposition sur le dépôt svn du projet : http://svn.georchestra.org/georchestra/
 
-Pour télécharger les sources, vous devez installer *subversion* (*TortoiseSVN* sous Windows), puis :
+Pour télécharger les sources, vous devez installer git*, puis :
 
 ::
-  
-  svn co http://svn.georchestra.org/georchestra/ georchestra
+  git clone https://github.com/georchestra/georchestra.git  
 
+Vous pouvez visualiser le code sur le projet `geOrchestra de github <https://github.com/georchestra>`_.
 
 Packages
 =========
