@@ -62,10 +62,13 @@
     <link rel="alternate" type="{{ type|e(true) }}" title="{{ title|e(true) }}" href="{{ link|e(true) }}" />
     {%- endfor %}
     {%- else %}
+    <link rel="stylesheet" href="{{ pathto('_static/css/bootstrap.css', 1) }}" type="text/css" />
+
     <link rel="stylesheet" href="{{ pathto('_static/css/slides.css', 1) }}">
 	
     <link rel="stylesheet" href="{{ pathto('_static/css/' + style, 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/css/pygments.css', 1) }}" type="text/css" />
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
     {%- endif %}
     {%- if builder != 'htmlhelp' %}
     <script type="text/javascript">
@@ -141,7 +144,47 @@
 		{%- block sidebar2 %}{{ sidebar() }}{% endblock %}
 	</div>
 	<div id="main" class="middle">
-	    <div id="menu">
+<div class="navbar">
+    <div class="navbar-inner">
+      <div class="container" style="width: auto;">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+<!--        <a class="brand" href="#">Project name</a>-->
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li {% if pagename == "index" %}class="active"{% endif %}><a href="{{ pathto(master_doc) }}">Accueil</a></li>
+            <li {% if pagename == "documentation/index" %}class="active"{% endif %} ><a href="{{ pathto('documentation/index.html',1) }}">Documentation</a></li>
+            <li {% if pagename == "documentation/overview" %}class="active"{% endif %}><a href="{{ pathto('documentation/overview.html',1) }}">Aperçu des fonctionnalités</a></li>
+            <li {% if pagename == "download" %}class="active"{% endif %}><a href="{{ pathto('download.html',1) }}">Téléchargement</a></li>
+            <li{% if pagename == "community" %}class="active"{% endif %}><a href="{{ pathto('community.html',1) }}">Communauté</a></li>
+            <li><a href="http://applis-bretagne.fr/redmine/projects/georchestra/wiki">Développement</a></li>
+            <li><a href="http://blog.georchestra.org">Blog</a></li>
+            <li {% if pagename == "about" %}class="active"{% endif %}><a href="{{ pathto('about.html',1) }}">À Propos</a></li>
+          </ul>
+<!--          <form class="navbar-search pull-left" action="">
+            <input type="text" class="search-query span2" placeholder="Search">
+          </form>
+          <ul class="nav pull-right">
+            <li class="divider-vertical"></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown">Dropdown Two<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action One</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Action Two</a></li>
+              </ul>
+            </li>
+          </ul>
+-->
+        </div><!-- /.nav-collapse -->
+      </div>
+    </div><!-- /navbar-inner -->
+  </div><!-- /navbar -->
+
+<!--	    <div id="menu">
 		<ul class="menu">
 		    <li class="" id="current"><a href="{{ pathto(master_doc) }}"><span>Accueil</span></a></li>
 		    <li class=""><a href="{{ pathto('documentation/index.html',1) }}"><span>Documentation</span></a></li>
@@ -153,6 +196,7 @@
 		    <li class=""><a href="{{ pathto('about.html',1) }}"><span>À propos</span></a></li>
 		</ul>
 	   </div>
+-->
 	   <div class="navlink" style="">
         	{%- block relbar1 %}{{ relbar() }}{% endblock %}
            </div>
