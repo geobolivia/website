@@ -1,11 +1,10 @@
 .. _`georchestra.community.index`:
 
 ===========
-Communauty
+Community
 ===========
 
-Le projet geOrchestra est un projet communautaire. 
-Toutes les formes de contributions sont les bienvenues, que ce soit via la participation aux listes de discussion, la rédaction de documentation, les contributions au code (sous forme de patchs), ou encore par le financement de nouvelles fonctionnalités.
+geOrchestra is a community project. All contributions are welcome, via mailing list, documentation, patches, source code or funding new features.
 
 IRC Channel
 ============
@@ -15,7 +14,7 @@ Join us on  #georchestra (freenode) !
 Mailing lists 
 ==============
 
-Le projet dispose actuellement de 4 listes :
+We have 4 mailing lists:
 
 * `georchestra@googlegroups.com <https://groups.google.com/group/georchestra?hl=fr>`_ est la liste 
   généraliste sur geOrchestra. Elle concerne principalement les annonces 
@@ -37,10 +36,10 @@ Le projet dispose actuellement de 4 listes :
   L'inscription et la consultation des messages est réservée aux membres du PSC.
   Pour contacter le PSC, utilisez l'adresse psc chez georchestra point org.
 
-Qui développe geOrchestra ?
-===========================
+Who develop geOrchestra?
+==========================
 
-Liste des développeurs qui ont le droit de commit sur le SVN (par ordre alphabétique) :
+Contributor of geOrchestra (commit right on github):
 
 * Bruno Binet (Camptocamp)
 * Mathieu Coudert (Spot Image)
@@ -57,7 +56,7 @@ Liste des développeurs qui ont le droit de commit sur le SVN (par ordre alphab�
 * François Van Der Biest (Camptocamp)
 
 
-Who are useing geOrchestra?
+Who are using geOrchestra?
 ============================
 
 * Région Bretagne, via le partenariat `GeoBretagne <http://www.geobretagne.fr>`_,
