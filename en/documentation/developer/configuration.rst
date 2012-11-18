@@ -1,6 +1,6 @@
-.. _`georchestra.fr.documentation.developer.configuration`:
+.. _`georchestra.en.documentation.developer.configuration`:
 
-=========================
+==========================
 Georchestra configuration
 ==========================
 
@@ -91,9 +91,12 @@ Generate Config
 ================
 
 Generate Config is likely only rarely used but it can be useful when a special situation occurs or when dealing with a project that has several target servers with virtually identical configurations.  As a way of explanation, the following is an example of such a case.
-
+ 
 Lets call the project, project MTS and it has a integration server and a production server.  One can use the directory structure:
-- conf
+
+.. code-block:: yaml
+
+  - conf
 	-configurations
 		- MTS
 			- build_support
@@ -106,7 +109,7 @@ Lets call the project, project MTS and it has a integration server and a product
 
 The GenerateConfig.groovy can be as follows:
 
-::
+.. code-block:: java
 	
   class GenerateConfig {
 	def SEP = File.separator
@@ -154,7 +157,8 @@ Future work
 ============
 
  * It is currenty difficult to override individual properties in the maven.filter files because only the entire file can be overridden.  The current solution is to write a GenerateConfig.groovy script that does the following:
-::
+
+.. code-block:: java
 	
 	def spMavenFilter = new Properties()
 	new File(basedirFile,'defaults'+SEP+'security-proxy'+SEP+"maven.filter").withReader { r -> 
@@ -173,4 +177,4 @@ Future work
 	spDir.mkdirs()
     new File(spDir, "maven.filter").withWriter{ w -> spMavenFilter.store(w,"updated by pigma's GenerateConfig class")}
 
-  A better solution is to add a maven.filter.overrides file that is empty by default, but each module will use to source properties from, with higher priority than the other maven.filter file.  This is easy.  In each pom.xml a new filter needs to be defined BEFORE the maven.filter filter.  And an empty file is added to each module (or the build script can generate an empty file)
+A better solution is to add a maven.filter.overrides file that is empty by default, but each module will use to source properties from, with higher priority than the other maven.filter file.  This is easy.  In each pom.xml a new filter needs to be defined BEFORE the maven.filter filter.  And an empty file is added to each module (or the build script can generate an empty file)

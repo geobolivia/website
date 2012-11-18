@@ -1,4 +1,4 @@
-.. _`georchestra.fr.documentation.rfc`:
+.. _`georchestra.en.documentation.rfc`:
 
 ====================
 Gestion des RFC
@@ -20,7 +20,7 @@ Comment cela fonctionne
 Le cycle de vie d'une RFC est celle-ci :
 
 1. le développeur a l'intention de réaliser une modification importante ;
-2. il communique sur la liste (voir :ref:`georchestra.community.index`) avec la 
+2. il communique sur la liste (voir :ref:`georchestra.en.community.index`) avec la 
    communauté sur les modifications ; tout le monde peut commenter les 
    propositions sur la liste, mais seuls les voix des membres du PSC seront 
    comptées. 

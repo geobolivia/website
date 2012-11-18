@@ -4,7 +4,8 @@
 Aperçu des fonctionnalités
 ============================
 
-Pour une liste des fonctionnalités plus exhaustive, allez sur la page :ref:`georchestra.documentation.feature`.
+Pour une liste des fonctionnalités plus exhaustive, allez sur la page 
+:ref:`georchestra.fr.documentation.feature`.
 
 Architecture
 ============

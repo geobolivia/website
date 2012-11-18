@@ -1,4 +1,4 @@
-.. _`georchestra.fr.documentation.fiche_identite`:
+.. _`georchestra.en.documentation.fiche_identite`:
 
 ======================================
 Fiche d'identité du projet geOrchestra

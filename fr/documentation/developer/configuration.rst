@@ -1,6 +1,6 @@
 .. _`georchestra.fr.documentation.developer.configuration`:
 
-=========================
+==========================
 Georchestra configuration
 ==========================
 
@@ -36,7 +36,9 @@ There were two important design goals for the configuration section
 
 The first goal was satisfied automatically simply by having the configuration module.  The second is a much trickier issue because one project can be very different from another, including different CSS, icons, proxies, etc...  In addition a project can have several target servers. (integration, production, dev, etc...).  Thus the following structure/build was devised:
 
-- conf
+.. code-block:: yaml
+
+   - conf
 	- shared.maven.filters
 	- configurations
 		- <server/project>
@@ -83,9 +85,15 @@ The order I have listed is very important.  The order is the order in which the 
 Overriding files 
 ================== 
 
-In the same way that shared.maven.filters are have a priority as do files.  Although slightly differently.  When a war is being built the files in the module are first copied into the war then files from config are copied into the war (overwriting the module files if they conflict.)
+In the same way that shared.maven.filters are have a priority as do files.  
+Although slightly differently.  When a war is being built the files in the 
+module are first copied into the war then files from config are copied into 
+the war (overwriting the module files if they conflict.)
 
-With regards to the configuration, when the config war is built the files from defaults are copied, then the files from conf/configurations/<server/project>/ and finally the files from conf/target/generated. Again files in one of the later sources will overwrite the previously added files.
+With regards to the configuration, when the config war is built the files from 
+defaults are copied, then the files from conf/configurations/<server/project>/ 
+and finally the files from conf/target/generated. Again files in one of the 
+later sources will overwrite the previously added files.
 
 Generate Config
 ================
@@ -93,8 +101,10 @@ Generate Config
 Generate Config is likely only rarely used but it can be useful when a special situation occurs or when dealing with a project that has several target servers with virtually identical configurations.  As a way of explanation, the following is an example of such a case.
 
 Lets call the project, project MTS and it has a integration server and a production server.  One can use the directory structure:
-- conf
-	-configurations
+.. code-block:: yaml
+	
+	- conf
+	    -configurations
 		- MTS
 			- build_support
 				- GenerateConfig.groovy
@@ -106,7 +116,7 @@ Lets call the project, project MTS and it has a integration server and a product
 
 The GenerateConfig.groovy can be as follows:
 
-::
+.. code-block:: java
 	
   class GenerateConfig {
 	def SEP = File.separator
@@ -120,7 +130,7 @@ The GenerateConfig.groovy can be as follows:
 	 * @param targetDir a File object referencing the targetDir
 	 * @param buildSupportDir a File object referencing the build_support dir of the target project
 	 * @param outputDir the directory to copy the generated configuration files to
-	**/
+        **/
 	def generate(def project, def log, def ant, def basedirFile, 
 							def target, def subTarget, def targetDir, 
 							def buildSupportDir, def outputDir) {
@@ -150,11 +160,13 @@ The GenerateConfig.groovy can be as follows:
 	}
   }
 
+
 Future work
 ============
 
  * It is currenty difficult to override individual properties in the maven.filter files because only the entire file can be overridden.  The current solution is to write a GenerateConfig.groovy script that does the following:
-::
+
+.. code-block:: java
 	
 	def spMavenFilter = new Properties()
 	new File(basedirFile,'defaults'+SEP+'security-proxy'+SEP+"maven.filter").withReader { r -> 
@@ -173,4 +185,9 @@ Future work
 	spDir.mkdirs()
     new File(spDir, "maven.filter").withWriter{ w -> spMavenFilter.store(w,"updated by pigma's GenerateConfig class")}
 
-  A better solution is to add a maven.filter.overrides file that is empty by default, but each module will use to source properties from, with higher priority than the other maven.filter file.  This is easy.  In each pom.xml a new filter needs to be defined BEFORE the maven.filter filter.  And an empty file is added to each module (or the build script can generate an empty file)
+A better solution is to add a maven.filter.overrides file that is empty by 
+default, but each module will use to source properties from, with higher 
+priority than the other maven.filter file.  This is easy.  In each pom.xml a 
+new filter needs to be defined BEFORE the maven.filter filter.  And an empty 
+file is added to each module (or the build script can generate an empty file).
+

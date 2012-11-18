@@ -18,12 +18,12 @@ niveau du serveur.
 Pour appréhender les potentialités de l'éditeur de geOrchestra, n’hésitez pas à 
 cliquer sur la rubrique, parmi celles présentées qui vous intéresse :
 
- * :ref:`georchestra.documentation.utilisateur.edition.ergo`
- * :ref:`georchestra.documentation.utilisateur.edition.load`
- * :ref:`georchestra.documentation.utilisateur.edition.modif`
- * :ref:`georchestra.documentation.utilisateur.edition.saisie`
+ * :ref:`georchestra.fr.documentation.utilisateur.edition.ergo`
+ * :ref:`georchestra.fr.documentation.utilisateur.edition.load`
+ * :ref:`georchestra.fr.documentation.utilisateur.edition.modif`
+ * :ref:`georchestra.fr.documentation.utilisateur.edition.saisie`
 
-.. _`georchestra.documentation.utilisateur.edition.ergo`:
+.. _`georchestra.fr.documentation.utilisateur.edition.ergo`:
 
 Ergonomie générale de l’interface
 ==================================
@@ -44,7 +44,7 @@ La capture d'écran ci-dessous présente l'ergonomie générale de l'interface.
  * Zone 4 : Géolocalisation selon Geonames ;
  * Zone 5 : Édition proprement dite.
 
-.. _`georchestra.documentation.utilisateur.edition.load`:
+.. _`georchestra.fr.documentation.utilisateur.edition.load`:
 
 Charger une couche editable
 ============================
@@ -57,7 +57,7 @@ droite de la fenêtre :
 
 La couche est alors chargée en mode édition.
 
-.. _`georchestra.documentation.utilisateur.edition.modif`:
+.. _`georchestra.fr.documentation.utilisateur.edition.modif`:
 
 Modification d'un objet
 =========================
@@ -75,7 +75,7 @@ Pour enregistrer, il est nécessaire de synchroniser (2).
     :width: 700px
     
 
-.. _`georchestra.documentation.utilisateur.edition.saisie`:
+.. _`georchestra.fr.documentation.utilisateur.edition.saisie`:
 
 Saisie d'un objet
 ==================
@@ -90,3 +90,4 @@ Saisie d'un objet
  * Saisie des valeurs(3)
  * Confirmation/suppression(4)
  * Synchronisation (5)
+

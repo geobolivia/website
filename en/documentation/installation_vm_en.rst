@@ -1,3 +1,5 @@
+.. _`georchestra.en.installation_vm`:
+
 geOrchestra installation guide
 ===============================
 
@@ -12,17 +14,17 @@ http://applis-bretagne.fr/hudson/job/georchestra/
 
 The main goal of this exercise was to try a "time attack" setup, my previous record was around a half day.
  
- 0. begin of the setup around 8:45 PM
- 1. Create a new vm using the KVM interface (virt-manager)
- 2. Install a debian squeeze into the newly created guest
-    administrator: root/georchestra
-    regular user: georchestra/georchestra
+0. begin of the setup around 8:45 PM
+1. Create a new vm using the KVM interface (virt-manager)
+2. Install a debian squeeze into the newly created guest
+   administrator: root/georchestra
+   regular user: georchestra/georchestra
 
-    .. note:: Side note: keyboard is configured on french keymap (azerty)
-              password translated into qwerty would then be "georchestrq"
+   .. note:: Side note: keyboard is configured on french keymap (azerty)
+             password translated into qwerty would then be "georchestrq"
  
- 3. During the guest setup, checkout the pre-generated archives
- 4. Setup of the guest VM
+3. During the guest setup, checkout the pre-generated archives
+4. Setup of the guest VM
 
 * Selecting [*] web server during the installation installs apache2, let's switch to nginx
 
@@ -38,6 +40,7 @@ Installing some requirements
 	$ apt-get install nginx
 
 We also would need tomcat, obviously::
+
 	$ apt-get install tomcat6
 
 We might also need to use java VM from sun, but ... let's have some fun and try with openjdk for now.
@@ -52,6 +55,7 @@ asking for the administrator password of the ldap tree: georchestra
 It creates a default tree, which we may not be interested in ...
 
 It would be better to have the client tools for ldap::
+
 	$ apt-get install ldap-utils
 
 Now, we need to figure out what exactly did the post-setup scripts from debian::
@@ -81,25 +85,30 @@ Different cases are explained into http://svn.georchestra.org/georchestra/trunk/
 on how to start with slapd and geOrchestra, managing a LDAP tree from the beginning (especially slapd) could be painfull.
 
 Load the root DN (the root of our tree)::
+
 	$ ldapadd -Dcn=admin,dc=georchestra,dc=org -f georchestra-root.ldif -x -c -W
 	Enter LDAP Password: georchestra
 
 Load the sample data (default groups / users)::
+
 	$ ldapadd -Dcn=admin,dc=georchestra,dc=org -f georchestra.ldif -x -c -W
 	...
 
 you should see a lot of "adding new entry ..." in output
 
 Test if everything is ok::
+
 	$ ldapsearch -x -bdc=georchestra,dc=org | less
 
 you should have an output with::
+
     numResponses: 23
     numEntries: 22
 
 PostGreSQL / PostGIS installation
 -----------------------------------
 ::
+
 	$ apt-get install postgresql postgresql-8.4-postgis postgis
 
 Create a database for GeoNetwork::
@@ -139,6 +148,7 @@ respectively, since we are going to access it directly (without getting through 
 	$ cd /var/lib/tomcat6/webapps/
 
 tomcat debian package comes with its own ROOT webapp, but we are not going to use it::
+
 	$ rm -rf ROOT/
 
 then copy every war's into the directory
@@ -155,6 +165,7 @@ Looking at /var/lib/tomcat6/logs/catalina.out:
 extractorapp is configured to host its log files into /var/log/tomcat/extractorapp.log, but this directory does not exist. Let's create it (or fix the configuration profile). For now I just created a symbolic link /var/log/tomcat -> /var/log/tomcat6
 
 In fact, by reading the catalina.out log, every webapp will complain for this directory.
+
 ::
 
 	$ ln -s /var/log/tomcat6 /var/log/tomcat
@@ -165,6 +176,7 @@ Trying to reach the VM for a first time
 
 
 To make it easier, I put the following line into my /etc/hosts file::
+
 	192.168.122.123 vm-georchestra
 
 which corresponds to the IP of my guest virtual machine (for the completely noob in linux, you can check the IP using a tool like ifconfig)
@@ -175,11 +187,19 @@ configure nginx
 
 One step I did not deal with yet is that we need a web server ; we previously removed apache2 and replaced it with nginx but it is not configured yet
 
-Note: The nginx configuration below has been written during the whole deployment process, so some parameters may sound obscure now but only come to light reading carefully the following guide.
+.. note:: 
+    The nginx configuration below has been written during the whole deployment 
+    process, so some parameters may sound obscure now but only come to light 
+    reading carefully the following guide.
 
-the default nginx package that comes from debian squeeze (is really old, yes), but the default configuration is somehow similar to the apache configuration. Let's jump into /etc/nginx
+The default nginx package that comes from debian squeeze (is really old, yes), 
+but the default configuration is somehow similar to the apache configuration. 
+Let's jump into */etc/nginx*.
 
-create a vm-georchestra file into /etc/nginx/sites-available, with the following content::
+Create a vm-georchestra file into /etc/nginx/sites-available, with the following content:
+
+.. code-block:: ini
+
 	server {
 	
 	        listen   80;
@@ -193,8 +213,7 @@ create a vm-georchestra file into /etc/nginx/sites-available, with the following
 	                root   /var/www;
 	                index  index.html index.htm;
 	        }
-	
-        	location ~ ^/(analytics|cas|catalogapp|downloadform|mapfishapp|proxy|static|extractorapp|geoserver|geonetwork|doc|j_spring_cas_security_check|j_spring_security_logout)(/?).*$ {
+       		location ~ ^/(analytics|cas|catalogapp|downloadform|mapfishapp|proxy|static|extractorapp|geoserver|geonetwork|doc|j_spring_cas_security_check|j_spring_security_logout)(/?).*$ {
 	                proxy_pass         http://127.0.0.1:8080$request_uri;
 	                proxy_redirect     off;
 
@@ -267,9 +286,11 @@ create a vm-georchestra file into /etc/nginx/sites-available, with the following
 	        }
 	}
 	
-Then remove the symlink to the default configuration provided by debian into /etc/nginx/sites-enabled/ (default, if I remember correctly)
+Then remove the symlink to the default configuration provided by debian into 
+*/etc/nginx/sites-enabled/* (default, if I remember correctly)
 
 Create a new symlink to the created configuration::
+
 	$ ln -s /etc/nginx/sites-available/vm-georchestra /etc/nginx/sites-enabled/vm-georchestra
 
 As you may have noticed, we defined some configuration variables that point out
@@ -278,35 +299,42 @@ created into /etc/nginx ; using signed certificates (that you may have obtained
 from a SSL certificate company is beyond the scope of this guide - need to
 have a real domain name).
 
-into a temporary directory,
+Into a temporary directory, create a SSL key::
 
-create a SSL key::
 	$ openssl genrsa -des3 -out myssl.key 1024
 
-prompted for a passphrase, say "georchestra"
+Prompted for a passphrase, say "georchestra".
 
-create a certificate signing request::
-	$ openssl req -new -key myssl.key -out myssl.csr
+Create a certificate signing request::
 
-prompted for the previous password
+  $ openssl req -new -key myssl.key -out myssl.csr
 
-then, reply to all questions with some parameters, the ONLY important one is the::
-	Common Name (eg, YOUR name) []:
+Prompted for the previous password, then, reply to all questions with some 
+parameters, the ONLY important one is the:
+.. code-block:: ini
 
-For a webserver, the CN of the certificate SHOULD be the server name you are going to call, i.e. if you intend to "https://vm-georchestra/" then the certificate CN should be "vm-georchestra".
+   Common Name (eg, YOUR name) []:
+
+For a webserver, the CN of the certificate SHOULD be the server name you are 
+going to call, i.e. if you intend to "https://vm-georchestra/" then the 
+certificate CN should be "vm-georchestra".
 
 Then, we have to unprotect the key (remember the passphrase you have to enter). In fact, OpenSSL does not allow to create non-protected keys. Unprotecting the previous key is done with the following command::
+
 	$ openssl rsa -in myssl.key -out myssl-unprotected.key
 	(re-prompted for the passphrase)
 
 The final step is to generate the certificate::
+
 	$ openssl x509 -req -days 365 -in myssl.csr -signkey myssl.key -out myssl.crt
 
 then, you have it::
+
 	$ cp myssl.crt /etc/nginx/cert.pem
 	$ cp myssl-unprotected.key /etc/nginx/cert.key
 
 You can now relaunch nginx::
+
 	$ /etc/init.d/nginx restart
 
 Configure (well, repair) the security-proxy
@@ -315,11 +343,13 @@ Configure (well, repair) the security-proxy
 The security-proxy (ROOT.war) is THE webapp to focus on, without it, or with misconfigurations, nothing could work properly.
 
 first, go to::
+
 	$ cd /var/lib/tomcat6/webapps/ROOT/WEB-INF
 
 and have a look at proxy-servlet.xml
 
-The main configuration of the routing is done relying on the following XML statements::
+The main configuration of the routing is done relying on the following XML statements:
+.. code-block::
 
           <property name="targets">
                <map>
@@ -327,23 +357,34 @@ The main configuration of the routing is done relying on the following XML state
                </map>
           </property>
 
-Here, the geoserver target is wrong: we chose to put it into the same tomcat as the other apps, so it should be http://localhost:8080/geoserver-private/
+Here, the geoserver target is wrong: we chose to put it into the same tomcat as 
+the other apps, so it should be http://localhost:8080/geoserver-private/
 
 
-Into the file security-proxy.properties, we can figure out that the expected default password for ldap admin is "secret", infortunately we set it at setup of slapd to "georchestra", so let's change it (into the security proxy conf, or into slapd directly, here I chose to modify it into the LDAP server, so that if it is used elsewhere, it would fit with the configuration profile).
+Into the file security-proxy.properties, we can figure out that the expected 
+default password for ldap admin is "secret", infortunately we set it at setup 
+of slapd to "georchestra", so let's change it (into the security proxy conf, 
+or into slapd directly, here I chose to modify it into the LDAP server, so 
+that if it is used elsewhere, it would fit with the configuration profile).
+
 ::
+
 	$ vi /etc/ldap/slapd.d/cn=config/Database={1}hdb.ldif
 
 change::
+
 	olcRootPW:: [...]
 
 to::
+
 	olcRootPW: secret
 
 Relaunch the server::
+
 	$ /etc/init.d/slapd restart
 
 Try the newly set password::
+
 	$ ldapsearch -Dcn=admin,dc=georchestra,dc=org -x -W -bdc=georchestra,dc=org
 	Enter LDAP Password: secret
 	[...]
@@ -353,12 +394,15 @@ still in proxy-servlet.xml:
 line 51: I don't know what this <map>${header.mapping}</map> is about, but since this variable is not referenced into the security.properties file, let's remove it, because it makes the security-proxy startup fail.
 
 In addition, the security-proxy tends to use a host named vm-georchestra, but we defined the guest VM with "georchestra" as hostname, let's hack it adding vm-georchestra to the /etc/hosts file::
+
 	$ vi /etc/hosts
 
 add::
+
 	127.0.0.1 vm-georchestra
 
 Then relaunch tomcat::
+
 	$ /etc/init.d/tomcat6 restart
 
 
@@ -370,14 +414,13 @@ Somehow the parameters for the database has not been passed correctly with the v
 
 Here are some inconsistencies from the vmware configuration profile:
 
-into /var/lib/tomcat6/webapps/geonetwork-private/config.xml:
+into /var/lib/tomcat6/webapps/geonetwork-private/config.xml, around line 7::
 
-around line 7::
 	${dataDir}
 
-just replaced the variable by "data"
+just replaced the variable by "data" around line 56:
 
-around line 56::
+.. code-block:: xml
 
 	    <call name="env" class="org.fao.geonet.guiservices.util.Env">
         	<param name="dlform.activated" value="${dlform.activated}" />
@@ -388,11 +431,13 @@ just replaced ${dlform.activated} by "false"
 and put some junk for the other unresolved variable
 
 around line 178::
+
 	     <url>jdbc:postgresql://${psql.host}:${psql.port}/${psql.db}</url>
 
 replaced the <url> content by: jdbc:postgresql://127.0.0.1:5432/geonetwork
 
 around line 411::
+
 	     <param name="wfsURL" value="${wfsRegionsCapabilities}" />
         	${wfsRegionsCredentials}
 
@@ -400,6 +445,7 @@ I Cannot remember what I did here, anyway I'm not planning to use the region res
 
 
 around line 196::
+
             <url>${downloadform.psql.url}</url>
 
 downloadform is a recent development which aims to track downloads from geonetwork download services. Since was not existing when the configuration profile has been written, let's ignore it too.
@@ -412,9 +458,11 @@ into :file:`/var/lib/tomcat6/webapps/cas/WEB-INF/cas.properties`:
 
 
 the server.prefix is incorrect, CAS protocol requires SSL communications::
+
 	server.prefix=http://localhost:8080/cas
 
 to be modified by::
+
 	server.prefix=https://localhost:8443/cas
 
 
@@ -429,7 +477,10 @@ I actually decided to "hack around" with java SSL key management, even if I also
 
 Create a connector for tomcat6:
 
-into :file:`/var/lib/tomcat6/conf/server.xml`::
+Into :file:`/var/lib/tomcat6/conf/server.xml`:
+
+.. code-block:: xml
+
 	    <Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"
         	maxThreads="150" scheme="https" secure="true"
 	        clientAuth="false" sslProtocol="TLS" keystoreFile="/var/lib/tomcat6/ssl/vm-georchestra.jks"
@@ -438,28 +489,38 @@ into :file:`/var/lib/tomcat6/conf/server.xml`::
 You can set it just after the default 8080 (regular http one).
 
 Generate a java keystore::
+
 	$ cd /var/lib/tomcat6
 	$ mkdir ssl
 	$ cd ssl
 	$ keytool -genkey -alias mycert -keyalg RSA -keystore vm-georchestra.jks
 
-A password would be asked, I put "secret" (see configuration of the Connector above)
+A password would be asked, I put "secret" (see configuration of the Connector 
+above).
 
-Now, we want to merge this certificate into the global system truststore ; in order not to taint the default cacerts provided by the package, we are going to make a copy of it::
+Now, we want to merge this certificate into the global system truststore ; in 
+order not to taint the default cacerts provided by the package, we are going 
+to make a copy of it::
+
 	$ cp /usr/lib/jvm/java-6-openjdk/jre/lib/security/cacerts .
 
 We now export the previously generated certificate::
+
 	$ keytool -exportcert -alias mycert -file exported -keystore vm-georchestra.jks
 
 The password (secret) would be asked once again
 
 
 And we import it into our custom truststore::
+
 	$ keytool -importcert -alias localhost -file exported -keystore cacerts
 
 For your information you will be prompted for a password here, the default password for the truststore provided by the original debian package is "changeit"
 
-Now we can modify the java environment variable to use this custom truststore instead of the system one ; add the 3 following lines into the edited file (omit the leading "+")::
+Now we can modify the java environment variable to use this custom truststore instead of the system one ; add the 3 following lines into the edited file (omit the leading "+"):
+
+.. code-block:: bash
+
 	$ vi /etc/default/tomcat6
 
 	[...]
@@ -470,16 +531,14 @@ Now we can modify the java environment variable to use this custom truststore in
 	+ JAVA_OPTS="${JAVA_OPTS} ${SSL_OPTS}"
 	[...]
 
-Relaunch tomcat, and try on your host to visit the page:
-
-http://vm-georchestra/geonetwork/
+Relaunch tomcat, and try on your host to visit the page: http://vm-georchestra/geonetwork/
 
 Clicking on "connexion" should redirect you to the cas server, you can then try the following credentials:
 
-testadmin/testadmin
-testreviewer/testreviewer
-testuser/testuser
-...
+* testadmin/testadmin
+* testreviewer/testreviewer
+* testuser/testuser
+* ...
 
 MapfishApp
 --------------
@@ -516,9 +575,13 @@ Going a bit further ...
 ------------------------
 
 The default geonetwork map does not display, let's modify it::
+
 	$ vi /var/lib/tomcat6/webapps/geonetwork-private/GeoConfig.js
 
-replace accordingly::
+replace accordingly:
+
+.. code-block:: yaml
+
 	Geonetwork.CONFIG.GeoPublisher = {
 	    // configuration for the base map used in the GeoPublisher interface
 	    // Map viewer options to use in main map viewer and in editor map viewer
@@ -602,12 +665,14 @@ ogcstatistics
 OGC statistics is a kind of "plugin" (strictly speaking, a log4j module) which, once attached to the security-proxy, logs every OGC requests to a postgresql database. It is bundled with the security-proxy vmware webapp, but not activated by default. 
 
 Here are the steps to activate this specific logging::
+
 	$ su - postgres
 	$ createdb ogcstatistics
 	$ wget http://svn.georchestra.org/georchestra/trunk/ogc-server-statistics/ogc_statistics_table.sql
 	$ psql ogcstatistics < ogc_statistics_table.sql
 
 Then edit the file in /var/lib/tomcat6/webapps/ROOT/WEB-INF/classes/log4j.properties so that it looks like::
+
 	[...]
 	log4j.rootCategory=INFO, R, OGCSTATISTICS
 	[...]
@@ -625,9 +690,11 @@ And restart tomcat
 Deploying the analytics webapp
 -------------------------------
 
-In order to be able to analyze the logs, a new webapp has been developped, called analytics. Let's deploy it with the other webapps.
+In order to be able to analyze the logs, a new webapp has been developped, called 
+analytics. Let's deploy it with the other webapps.
 
 ::
+
 	$ cd
 	$ wget http://applis-bretagne.fr/hudson/job/georchestra//lastSuccessfulBuild/artifact/analytics/target/analytics-private-vmware.war
 	
@@ -635,7 +702,10 @@ In order to be able to analyze the logs, a new webapp has been developped, calle
 	
 	$ vi proxy-servlet.xml
 
-And add a target for analytics::
+And add a target for analytics:
+
+.. code-block:: xml
+
 	[...]
 	          <property name="targets">
 	               <map>
@@ -644,14 +714,16 @@ And add a target for analytics::
 	          </property>
 	[...]
 
-same with the nginx configuration::
+Same with the nginx configuration::
+
 	$ vi /etc/nginx/sites-available/vm-georchestra
 	
 	[...]  
 	    location ~ ^/(analytics|cas|catalogapp|mapfishapp|proxy|static|extractorapp|geoserver|geonetwork|doc|j_spring_cas_security_check|j_spring_security_logout)(/?).*$
 	[...]
 
-ensure to have the "analytics" entry defined in the regexp::
+Ensure to have the "analytics" entry defined in the regexp::
+
 	$ /etc/init.d/nginx reload
 	
 	$ /etc/init.d/tomcat6 stop
@@ -664,89 +736,107 @@ Activating downloadform
 -------------------------
 
 *downloadform* is a webapp which aims to keep track of what is downloaded by the user, 
-forcing them to accept a usage policy before proceeding, it has been introduced into the
- solution later on.
+forcing them to accept a usage policy before proceeding, it has been introduced into the 
+solution later on.
 
 You have to follow the same steps as before in order to add it::
+
 	$ cd
 	$ wget http://applis-bretagne.fr/hudson/job/georchestra//lastSuccessfulBuild/artifact/downloadform/target/
 
 stopping tomcat::
+
 	$ /etc/init.d/tomcat6 stop
 
 	$ cp downloadform-1.0-vmware.war /var/lib/tomcat6/webapps/downloadform-private.war
 
 Registering the new webapp into the security-proxy:
 
-[...]
-          <property name="targets">
-               <map>
-<entry key="extractorapp" value="http://localhost:8080/extractorapp-private/" /><entry key="gssec" value="http://localhost:8080/geoserver-security/" /><entry key="mapfishapp" value="http://localhost:8080/mapfishapp-private/" /><entry key="geonetwork" value="http://localhost:8080/geonetwork-private/" /><entry key="catalogapp" value="http://localhost:8080/catalogapp-private/" /><entry key="geoserver" value="http://localhost:8080/geoserver-private/" /><entry key="analytics" value="http://localhost:8080/analytics-private/" /><entry key="downloadform" value="http://localhost:8080/downloadform-private/" />
-               </map>
-          </property>
-[...]
+.. code-block:: xml
 
-Updating the nginx configuration::
-	$ vi /etc/nginx/sites-available/vm-georchestra
+    [...]
+    <property name="targets">
+        <map>
+          <entry key="extractorapp" value="http://localhost:8080/extractorapp-private/" /><entry key="gssec" value="http://localhost:8080/geoserver-security/" /><entry key="mapfishapp" value="http://localhost:8080/mapfishapp-private/" /><entry key="geonetwork" value="http://localhost:8080/geonetwork-private/" /><entry key="catalogapp" value="http://localhost:8080/catalogapp-private/" /><entry key="geoserver" value="http://localhost:8080/geoserver-private/" /><entry key="analytics" value="http://localhost:8080/analytics-private/" /><entry key="downloadform" value="http://localhost:8080/downloadform-private/" />
+        </map>
+    </property>
+    [...]
+
+Updating the nginx configuration:
+
+.. code-block:: bash
+
+    $ vi /etc/nginx/sites-available/vm-georchestra
 	
-	[...]  
-	    location ~ ^/(analytics|cas|catalogapp|downloadform|mapfishapp|proxy|static|extractorapp|geoserver|geonetwork|doc|j_spring_cas_security_check|j_spring_security_logout)(/?).*$
-	[...]
+    [...]  
+    location ~ ^/(analytics|cas|catalogapp|downloadform|mapfishapp|proxy|static|extractorapp|geoserver|geonetwork|doc|j_spring_cas_security_check|j_spring_security_logout)(/?).*$
+    [...]
 
-This webapp needs a bit more configuration into extractorapp and geonetwork:
+This webapp needs a bit more configuration into extractorapp and geonetwork: 
+into :file:`/var/lib/tomcat6/webapps/geonetwork-private/WEB-INF/config.xml` 
+around line #51:
 
-into :file:`/var/lib/tomcat6/webapps/geonetwork-private/WEB-INF/config.xml` around line #51::
+.. code-block:: xml
 
-                       <call name="env" class="org.fao.geonet.guiservices.util.Env">
-                                <param name="dlform.activated" value="true" />
-                                <param name="dlform.pdf_url" value="/static/non-existing.pdf" />
-                        </call>
+   <call name="env" class="org.fao.geonet.guiservices.util.Env">
+     <param name="dlform.activated" value="true" />
+     <param name="dlform.pdf_url" value="/static/non-existing.pdf" />
+   </call>
 
 .. note:: You can modify pdf_url to point on an existing document, but well, I'm not a lawyer, so I'll leave it for now.
 
-around line #196::
-                <driver>org.postgresql.Driver</driver>
-                                <!--   
-                                        jdbc:postgresql:database
-                                        jdbc:postgresql://host/database
-                                        jdbc:postgresql://host:port/database
-                                -->
-                <url>jdbc:postgresql://127.0.0.1:5432/downloadform</url>
+Around line #196:
+
+.. code-block:: xml
+	
+        <driver>org.postgresql.Driver</driver>
+                         <!--   
+                                 jdbc:postgresql:database
+                                 jdbc:postgresql://host/database
+                                 jdbc:postgresql://host:port/database
+                         -->
+        <url>jdbc:postgresql://127.0.0.1:5432/downloadform</url>
 
 
-
-
-into :file:`/var/lib/tomcat6/webapps/extractorapp-private/WEB-INF/extractorapp.properties` around line #23::
+Into :file:`/var/lib/tomcat6/webapps/extractorapp-private/WEB-INF/extractorapp.properties` around line #23::
 
 	dlformactivated=true
 	dlformjdbcurl=jdbc:postgresql://www-data:www-data@127.0.0.1:5432/downloadform
 
 Then create the database::
+
 	$ su - postgres
 	$ wget http://svn.georchestra.org/georchestra/trunk/downloadform/samples/sample.sql
 	$ createdb downloadform
 	$ psql downloadform < sample.sql
 	$ rm sample.sql
 
-There is an issue with the previous script, some versions of postgresql does not seem to address correctly the foreign key constraints with inherited tables. You may have to drop the integrity constraint::
+There is an issue with the previous script, some versions of postgresql does 
+not seem to address correctly the foreign key constraints with inherited tables. 
+You may have to drop the integrity constraint::
+
 	$ psql downloadform
 	> set search_path = download, public ;
 	> alter table logtable_datause drop constraint fk_logtable_id ;
 
 Then restart tomcat (as root)::
+
 	$ /etc/init.d/tomcat6 start
 
-If you deployed the previous analytics webapp, you should now be able to get tracks of downloads from geonetwork, visiting http://vm-georchestra/analytics/ if logged as testadmin user. 
+If you deployed the previous analytics webapp, you should now be able to get 
+tracks of downloads from geonetwork, visiting http://vm-georchestra/analytics/ 
+if logged as testadmin user. 
 
 Ultimate conclusion
 -----------------------
 
-Maybe the installation process is far from perfect, if you still have some questions, feel free to join geOrchestra groups on google, and ask.
+Maybe the installation process is far from perfect, if you still have some 
+questions, feel free to join geOrchestra groups on google, and ask.
 
-http://groups.google.com/group/georchestra-dev
-http://groups.google.com/group/georchestra
+* http://groups.google.com/group/georchestra-dev
+* http://groups.google.com/group/georchestra
 
-These are mainly french-speaking but you can also write in english.
+These are english mailing-lists.
 
 
 - Pierre Mauduit <pmauduit AT qualitystreetmap DOT org>

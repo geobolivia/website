@@ -18,7 +18,7 @@ permet de résoudre les problèmes (techniques ou non). Il est constitué de
 contributeurs majeurs de la communauté.
 
 Ses membres sont élus par les "committers" du projet (voir le document 
-:ref:`georchestra.documentation.psc` pour plus d'informations).
+:ref:`georchestra.fr.documentation.psc` pour plus d'informations).
 
 Comment contacter le PSC (Project Steering Committee) ?
 ---------------------------------------------------------
@@ -91,12 +91,12 @@ Pour corriger ce problème :
 La recherche par adresse ne fonctionne pas ...
 ----------------------------------------------
 
-Il faut installer le module :ref:`georchestra.documentation.search_address`.
+Il faut installer le module :ref:`georchestra.fr.documentation.search_address`.
 
 Comment brancher la recherche référentiels ?
 ---------------------------------------------
 
-Voir :ref:`georchestra.documentation.postinstall`.
+Voir :ref:`georchestra.fr.documentation.postinstall`.
 
 
 En mode édition, la page ralenti fortement, j'ai un message d'erreur

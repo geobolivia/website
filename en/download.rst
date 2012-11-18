@@ -1,4 +1,4 @@
-.. _`georchestra.download.index`:
+.. _`georchestra.en.download.index`:
 
 ========================
 Download geOrchestra

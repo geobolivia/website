@@ -55,11 +55,11 @@ Exemples des responsabilités dévolues au PSC sans que cela soit exhaustif :
 * vote des droits de commits sur proposition de la communauté des développeurs.
 
 En bref, les votes sur les propositions de l'équipe de projet ont lieu sur la 
-liste dévolue aux développeurs (voir page :ref:`georchestra.community.index`). 
+liste dévolue aux développeurs (voir page :ref:`georchestra.fr.community.index`). 
 Les propositions sont disponibles pour examen pendant au 
 moins deux jours ouvrables. Puis le vote a lieu et s'il n'y a pas de rejet, la 
 motion est considérée comme acceptée. Pour plus d'informations, voir la page 
-:ref:`georchestra.documentation.rfc`.
+:ref:`georchestra.fr.documentation.rfc`.
 
 Observations
 -------------
@@ -87,7 +87,7 @@ Ajout de membres au PSC
 ------------------------
 
 Tout membre de la liste de diffusion dévolue aux développeurs (voir page 
-:ref:`georchestra.community.index`) peut, à tout moment, 
+:ref:`georchestra.fr.community.index`) peut, à tout moment, 
 proposer quelqu'un en tant que nouveau membre du PSC. Seuls les membres actuels 
 du PSC peuvent voter sur les nouveaux membres. Le candidat doit recevoir un 
 vote à la majorité des membres existants avant d'être ajouté au PSC. 
@@ -129,7 +129,7 @@ Participation aux listes de diffusion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Les membres du PSC sont censés être actifs sur les listes de diffusion 
-(voir :ref:`georchestra.community.index`). Les 
+(voir :ref:`georchestra.fr.community.index`). Les 
 membres non-développeurs du PSC ne sont pas tant là pour répondre à des 
 questions au niveau du code sur la liste de diffusion des développeurs, mais 
 plutôt pour leurs réflexions et opinions sur les exigences du niveau de 

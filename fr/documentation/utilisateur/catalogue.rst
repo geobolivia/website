@@ -12,14 +12,14 @@ Introduction
 Pour appréhender les potentialités du catalogue de geOrchestra, n’hésitez pas à 
 cliquer sur la rubrique, parmi celles présentées qui vous intéressent :
 
- * :ref:`georchestra.documentation.utilisateur.catalogue.creer`
- * :ref:`georchestra.documentation.utilisateur.catalogue.saisir`
- * :ref:`georchestra.documentation.utilisateur.catalogue.importer`
- * :ref:`georchestra.documentation.utilisateur.catalogue.administrer`
- * :ref:`georchestra.documentation.utilisateur.catalogue.majfiche`
- * :ref:`georchestra.documentation.utilisateur.catalogue.majdonnees`
+* :ref:`georchestra.fr.documentation.utilisateur.catalogue.creer`
+* :ref:`georchestra.fr.documentation.utilisateur.catalogue.saisir`
+* :ref:`georchestra.fr.documentation.utilisateur.catalogue.importer`
+* :ref:`georchestra.fr.documentation.utilisateur.catalogue.administrer`
+* :ref:`georchestra.fr.documentation.utilisateur.catalogue.majfiche`
+* :ref:`georchestra.fr.documentation.utilisateur.catalogue.majdonnees`
 
-.. _`georchestra.documentation.utilisateur.catalogue.creer`:
+.. _`georchestra.fr.documentation.utilisateur.catalogue.creer`:
 
 Création d’une fiche
 =====================
@@ -35,19 +35,19 @@ Puis, laissez par défaut le modèle "geOrchestra Inspire" et le groupe
 
 **Règles générales :**
 
-  * En cliquant sur le symbol plus, vous rajoutez dans la fiche un champ 
-    identique à celui sur lequel vous cliquez.
-  * En cliquant sur la croix, vous supprimez le champ de la vue actuelle. Vous 
-    pouvez toujours le retrouver en allant dans la vue avancée associée à ce 
-    champ (ISO Complet pour tout voir).
-  * Ces boutons permettent de changer l’ordre des champs.
+* En cliquant sur le symbol plus, vous rajoutez dans la fiche un champ 
+  identique à celui sur lequel vous cliquez.
+* En cliquant sur la croix, vous supprimez le champ de la vue actuelle. Vous 
+  pouvez toujours le retrouver en allant dans la vue avancée associée à ce 
+  champ (ISO Complet pour tout voir).
+* Ces boutons permettent de changer l’ordre des champs.
 
 .. note::
         Si vous voulez ajouter un champ non présent dans le modèle, il vous 
         suffira d’allez dans la vue avancée associée à votre champ (ISO Complet 
         pour tout voir).
 
-.. _`georchestra.documentation.utilisateur.catalogue.saisir`:
+.. _`georchestra.fr.documentation.utilisateur.catalogue.saisir`:
 
 Saisie d’une fiche
 ===================
@@ -76,11 +76,11 @@ une étoile rouge sont obligatoires).
   la donnée et l’usage de la donnée qui a été fait après sa création.
 * **Etat :** Etat de la donnée :
  
- - Obsolète : donnée ancienne sans mise à jour prévue.
- - Historique : donnée ancienne qui a été mise à jour depuis.
- - Mis à jour : donnée en cours de création.
- - Terminé (valeur par défaut): donnée à jour (la mise à jour a été effectuée).
- - En cours / requis / planifié : pas de définition exacte
+  - Obsolète : donnée ancienne sans mise à jour prévue.
+  - Historique : donnée ancienne qui a été mise à jour depuis.
+  - Mis à jour : donnée en cours de création.
+  - Terminé (valeur par défaut): donnée à jour (la mise à jour a été effectuée).
+  - En cours / requis / planifié : pas de définition exacte
 
 **Point de contact :**
 
@@ -103,10 +103,10 @@ Une fois  la fenêtre ouverte, choisissez le contact puis cliquez sur *Ajouter*.
 * **Fréquence de mise à jour :** fréquence de mise à jour de la donnée. Quelques 
   précisions sur les valeurs non périodiques :
   
- - Continue : vrai dans le cas d’un capteur automatique qui met à jour la 
-   donnée en temps réel.
- - Lorsque nécessaire : quand on sait que la donnée sera mise à jour à une date 
-   non définie => valeur à privilégier par rapport à irrégulière ou inconnue.
+  - Continue : vrai dans le cas d’un capteur automatique qui met à jour la 
+    donnée en temps réel.
+  - Lorsque nécessaire : quand on sait que la donnée sera mise à jour à une date 
+    non définie => valeur à privilégier par rapport à irrégulière ou inconnue.
 
 * **Remarque sur la mise à jour :** Remarques éventuelles sur la fréquence de 
   mise à jour. Par exemple l’événement qui déclanche la mise à jour ou la date 
@@ -163,8 +163,8 @@ Pour saisir l’emprise de la donnée, plusieurs possibilités :
 * Saisie « en dur » dans les zones de saisies (Nord, Sud, Est, Ouest).
 * Saisie grâce aux couches référentielles :
 
- * Choix de la couche.
- * Saisie de l’entité sur laquelle portera l’emprise.
+  * Choix de la couche.
+  * Saisie de l’entité sur laquelle portera l’emprise.
 
 * Saisie grâce à la fonction draw rectangle
 
@@ -172,11 +172,11 @@ Pour saisir l’emprise de la donnée, plusieurs possibilités :
 
 .. image:: _static/catalogue_saisir_distributeur.png
 
-Informations diverses sur le **distributeur** de la donnée. Laissez le **rôle**
- distributeur. **Nom du format :** format de distribution de la donnée. Il 
- s’agira du format de la couche géographique vecteur (shape, table, mif/mid ...), 
- raster (ecw, tif, ...) ou autre. **Version :** version du format. Si la version 
- est inconnue, mettre l’année de sortie du logiciel producteur de la donnée.
+Informations diverses sur le **distributeur** de la donnée. Laissez le **rôle** 
+distributeur. **Nom du format :** format de distribution de la donnée. Il 
+s’agira du format de la couche géographique vecteur (shape, table, mif/mid ...), 
+raster (ecw, tif, ...) ou autre. **Version :** version du format. Si la version 
+est inconnue, mettre l’année de sortie du logiciel producteur de la donnée.
 
 **Transfert de la donnée :**
 
@@ -234,7 +234,7 @@ Puis réaliser les étapes suivantes :
 
 .. image:: _static/catalogue_saisir_publier.png
 
-.. note ::
+.. note::
         S’il y a une erreur la première fois que vous cliquez sur publiez (ou 
         vérifiez), ne pas hésitez à recommencer.
 
@@ -286,9 +286,9 @@ projection choisie :
 **Aide complémentaire :**
 
 * `Lien INSPIRE by clouds <http://georezo.net/wiki/main:donnees:inspire:aide_a_la_saisie_des_metadonnees_inspire?do=subscribe#identificateur_de_ressource_unique>`_ .
-* `Manuel Geonetwork <http://csm-bretagne.fr/redmine/attachments/598/Manual_fra.pdf>`_ 
+* :download:`Manuel de GeoNetwork <manual_fra.pdf>`.
 
-.. _`georchestra.documentation.utilisateur.catalogue.importer`:
+.. _`georchestra.fr.documentation.utilisateur.catalogue.importer`:
 
 Import d’une fiche
 ===================
@@ -317,7 +317,7 @@ message de ce type vous préviendra que la fiche de métadonnées a été insér
 
 .. image:: _static/catalogue_importer_fin.png
 
-.. _`georchestra.documentation.utilisateur.catalogue.administrer`:
+.. _`georchestra.fr.documentation.utilisateur.catalogue.administrer`:
 
 Administration d’une fiche
 ===========================
@@ -366,7 +366,7 @@ référence.
 On vous demandera le groupe dans lequel  vous voulez affecter la fiche enfant 
 qui aura le même contenu que la fiche parent avec un lien en référence au parent.
 
-.. _`georchestra.documentation.utilisateur.catalogue.majfiche`:
+.. _`georchestra.fr.documentation.utilisateur.catalogue.majfiche`:
 
 Mise à jour d’une fiche de métadonnée et de la donnée 
 ======================================================
@@ -386,7 +386,7 @@ puis cliquez sur Supprimer.
 Une fois que l’on a fait cela, il suffit de reprendre la procédure de 
 publication d’une donnée (voir page 6) et d’Enregistrer la fiche.
 
-.. _`georchestra.documentation.utilisateur.catalogue.majdonnees`:
+.. _`georchestra.fr.documentation.utilisateur.catalogue.majdonnees`:
 
 Mise à jour d’une donnée issue d’une métadonnée de la V1
 =========================================================

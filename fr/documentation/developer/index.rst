@@ -4,5 +4,6 @@ Developpeur
 ============
 
 .. toctree::
+
    configuration
 

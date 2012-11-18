@@ -27,8 +27,8 @@ to publish and share spatial data on intranet and internet.
    :target: _static/flyer_georchestra.pdf
 
 For a quick presentation of geOrchestra and its components, you can read
-:ref:`georchestra.documentation.overview`. You can have a look to
-:ref:`georchestra.documentation.fiche_identite` in order to have a better 
+:ref:`georchestra.en.documentation.overview`. You can have a look to
+:ref:`georchestra.en.documentation.fiche_identite` in order to have a better 
 knowledge of features offered by geOrchestra.
 
 You can find some help with the community mailing list: see Community Page.

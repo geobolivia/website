@@ -1,10 +1,10 @@
-.. _`georchestra.fr.documentation.overview`:
+.. _`georchestra.en.documentation.overview`:
 
 ============================
 Aperçu des fonctionnalités
 ============================
 
-Pour une liste des fonctionnalités plus exhaustive, allez sur la page :ref:`georchestra.documentation.feature`.
+Pour une liste des fonctionnalités plus exhaustive, allez sur la page :ref:`georchestra.en.documentation.feature`.
 
 Architecture
 ============

@@ -1,4 +1,4 @@
-.. _`georchestra.documentation.installation_en`:
+.. _`georchestra.en.documentation.installation`:
 
 ==================
 Installation Guide
@@ -144,6 +144,7 @@ The second step is to add the credentials for the target server in the maven set
 file.  Typically that file is in $HOME/.m2/settings.xml.  The normal maven settings
 is used, so read http://maven.apache.org/settings.html#Servers for details.  Not all
 parameters are used by deploy.  Only 
+
  * id
  * host (not shown in the maven page, it is the hostname of the target server)
  * username 
@@ -170,6 +171,7 @@ Deployment Mechanism
 ====================
 
 The deploy mechanism consists of 2 modules:
+
  * server-deploy
  * server-deploy-support
 

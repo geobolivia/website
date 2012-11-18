@@ -1,4 +1,4 @@
-.. _`georchestra.apropos.index`:
+.. _`georchestra.en.apropos.index`:
 
 ==========
 About

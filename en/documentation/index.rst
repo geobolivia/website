@@ -67,8 +67,15 @@ Utilisateur
    :maxdepth: 2
    
    utilisateur/index
-   
-   
+
+Developer
+----------
+
+.. toctree::
+   :maxdepth: 2
+
+   developer/index
+ 
 F.A.Q.
 ========
 

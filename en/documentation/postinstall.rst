@@ -1,4 +1,4 @@
-.. _`georchestra.fr.documentation.postinstall`:
+.. _`georchestra.en.documentation.postinstall`:
 
 =============================
 Procédure post-installation

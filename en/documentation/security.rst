@@ -1,4 +1,4 @@
-.. _`georchestra.fr.documentation.security`:
+.. _`georchestra.en.documentation.security`:
 
 ==================================
 Gestion des droits et sécurité
@@ -15,7 +15,7 @@ La première partie décrit les interfaces de gestion des accès en fonction de
 l'outil utilisé. La section suivante illustre le concept de groupe et de région 
 au sein de geOrchestra.
 
-Vous pouvez accéder à la page :ref:`georchestra.documentation.installation_fr` 
+Vous pouvez accéder à la page :ref:`georchestra.en.documentation.installation` 
 pour d'autres informations à ce sujet.
 
 Gestion

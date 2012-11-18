@@ -1,4 +1,4 @@
-.. _`georchestra.fr.documentation.search_address`:
+.. _`georchestra.en.documentation.search_address`:
 
 ===================================================
 Préocédure d'installation du module search_address
@@ -11,6 +11,8 @@ Cette page décrit comment installer et configurer cette application.
 
 L'installation de la base de données adresse n'est pas décrite ici. Nous 
 supposerons ici que la base de données est fonctionnelle.
+
+.. [1] http://pylonsproject.com
 
 Dépendances
 ============

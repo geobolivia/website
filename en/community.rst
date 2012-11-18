@@ -1,4 +1,4 @@
-.. _`georchestra.community.index`:
+.. _`georchestra.en.community.index`:
 
 ===========
 Community
@@ -68,4 +68,4 @@ Who are using geOrchestra?
 * INRA Champenoux,
 * et bien d'autres ...
 
-`Contactez nous <https://groups.google.com/group/georchestra?hl=fr>`_ pour vous faire connaître !
+`Contact us <https://groups.google.com/group/georchestra?hl=fr>`_ to spread the world about your geOrchestra project!

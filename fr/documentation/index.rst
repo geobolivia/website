@@ -46,13 +46,8 @@ Installation
    search_address
    security
 
-Une version en 
-espagnol (:ref:`georchestra.documentation.installation_sp`) sont disponibles.
+Une `version en espagnol <../../sp/documentation/installation.html>`_ est disponible.
 
-.. toctree::
-   :hidden:
-   
-   installation_sp
 
 Utilisation
 ============
@@ -76,7 +71,14 @@ Utilisateur
    
    utilisateur/index
    
-   
+Developpeur
+------------
+
+.. toctree::
+   :maxdepth: 2
+
+   developer/index
+
 F.A.Q.
 ========
 

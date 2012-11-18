@@ -149,6 +149,7 @@ Mécanisme de déploiement
 ========================
 
 Le mécanisme de déploiement consiste en deux modules :
+
  * server-deploy
  * server-deploy-support
 
