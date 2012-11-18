@@ -41,7 +41,7 @@ Le projet dispose actuellement de 4 listes :
 Qui développe geOrchestra ?
 ===========================
 
-Liste des développeurs qui ont le droit de commit sur le SVN (par ordre alphabétique) :
+Liste des développeurs qui ont le droit de commit sur github (par ordre alphabétique) :
 
 * Bruno Binet (Camptocamp)
 * Mathieu Coudert (Spot Image)
