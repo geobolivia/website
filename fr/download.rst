@@ -18,6 +18,7 @@ Le code source est mis à disposition sur le dépôt svn du projet : https://git
 Pour télécharger les sources, vous devez installer git*, puis :
 
 ::
+  
   git clone https://github.com/georchestra/georchestra.git  
 
 Vous pouvez visualiser les autres sous-projets en développements à partir du projet `geOrchestra sur github <https://github.com/georchestra>`_.
