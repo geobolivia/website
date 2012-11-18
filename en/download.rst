@@ -7,21 +7,19 @@ Download geOrchestra
 Release
 ========
 
-Une version packagée complète de la suite sera bientôt disponible.
-Dans l'attente, nous vous recommandons d'installer à partir des sources (cf ci-dessous).
+A full release of the suite will be available soon. You can install geOrchestra from 
+the source doe, see below.
 
 Source Code
 ============
 
-Le code source est mis à disposition sur le dépôt svn du projet : http://svn.georchestra.org/georchestra/
+Source code is available on github project: https://github.com/georchestra//georchestra/ 
 
-Pour télécharger les sources, vous devez installer git*, puis :
-
-::
+In order to download source code, you need git, then clone the project::
   
   git clone https://github.com/georchestra/georchestra.git  
 
-Vous pouvez visualiser le code sur le projet `geOrchestra de github <https://github.com/georchestra>`_.
+You can read the source code in the `geOrchestra project on github <https://github.com/georchestra>`_.
 
 Packages
 =========
