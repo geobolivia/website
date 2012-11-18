@@ -55,13 +55,13 @@ h3 a.toc-backref {
 a:link, a:visited {
     text-decoration: none;
     font-weight: bold;
-    color: #56006B;
+    color: #800080;
 }
 
 a:hover {
     text-decoration: underline;
     font-weight: bold;
-    color: #56006B;
+    color: #800080;
 }
 
 input.button { cursor: pointer; }
@@ -159,14 +159,14 @@ div#leftmenus ul li#current a {
 	font-weight: bold;
 }
 div#leftmenus ul li.active a {
-	color: #56006B;
+	color: #800080;
 }
 
 div#leftmenus ul li ul li a {
 	font-weight: normal;
 	line-height: 90%;
 	display: block;
-	color: #56006B;
+	color: #800080;
 }
 div#leftmenus ul li#current ul li a {
 	font-weight: normal;
@@ -190,7 +190,7 @@ div#leftmenus ul#membershipmenu li ul li a{
 }
 div#leftmenus ul#membershipmenu li ul li#current a{
 	font-weight: bold;
-	color: #56006B;
+	color: #800080;
 }
 
 div#main {
@@ -244,7 +244,7 @@ div.frontpage_column_right .title {
 	margin: 0 0 10px 0;
 	padding: 2px 4px;
 	color: #fff;
-	background-color: #56006B;
+	background-color: #800080;
 }
 
 
@@ -581,7 +581,7 @@ a.headerlink:hover {
 }
 
 a.headerlink {
-	color:#56006B !important;
+	color:#800080 !important;
 	font-size:1em;
 	margin-left:6px;
 	padding:0 4px;
