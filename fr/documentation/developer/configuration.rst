@@ -114,6 +114,7 @@ Generate Config
 Generate Config is likely only rarely used but it can be useful when a special situation occurs or when dealing with a project that has several target servers with virtually identical configurations.  As a way of explanation, the following is an example of such a case.
 
 Lets call the project, project MTS and it has a integration server and a production server.  One can use the directory structure:
+
 .. code-block:: yaml
 	
 	- conf
@@ -177,7 +178,7 @@ The GenerateConfig.groovy can be as follows:
 Future work
 ============
 
- * It is currenty difficult to override individual properties in the maven.filter files because only the entire file can be overridden.  The current solution is to write a GenerateConfig.groovy script that does the following:
+* It is currenty difficult to override individual properties in the maven.filter files because only the entire file can be overridden.  The current solution is to write a GenerateConfig.groovy script that does the following:
 
 .. code-block:: java
 	

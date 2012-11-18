@@ -180,7 +180,7 @@ The GenerateConfig.groovy can be as follows:
 Future work
 ============
 
- * It is currenty difficult to override individual properties in the maven.filter files because only the entire file can be overridden.  The current solution is to write a GenerateConfig.groovy script that does the following:
+* It is currenty difficult to override individual properties in the maven.filter files because only the entire file can be overridden.  The current solution is to write a GenerateConfig.groovy script that does the following:
 
 .. code-block:: java
 	
