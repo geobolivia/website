@@ -1,4 +1,4 @@
-.. _`georchestra.community.index`:
+.. _`georchestra.fr.community.index`:
 
 ===========
 Communauté

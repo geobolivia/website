@@ -159,7 +159,7 @@
             <li {% if pagename == "documentation/index" %}class="active"{% endif %} ><a href="{{ pathto('documentation/index.html',1) }}">Documentation</a></li>
             <li {% if pagename == "documentation/overview" %}class="active"{% endif %}><a href="{{ pathto('documentation/overview.html',1) }}">Aperçu des fonctionnalités</a></li>
             <li {% if pagename == "download" %}class="active"{% endif %}><a href="{{ pathto('download.html',1) }}">Téléchargement</a></li>
-            <li{% if pagename == "community" %}class="active"{% endif %}><a href="{{ pathto('community.html',1) }}">Communauté</a></li>
+            <li {% if pagename == "community" %}class="active"{% endif %}><a href="{{ pathto('community.html',1) }}">Communauté</a></li>
             <li><a href="http://applis-bretagne.fr/redmine/projects/georchestra/wiki">Développement</a></li>
             <li><a href="http://blog.georchestra.org">Blog</a></li>
             <li {% if pagename == "about" %}class="active"{% endif %}><a href="{{ pathto('about.html',1) }}">À Propos</a></li>

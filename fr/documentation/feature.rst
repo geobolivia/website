@@ -1,4 +1,4 @@
-.. _`georchestra.documentation.feature`:
+.. _`georchestra.fr.documentation.feature`:
 
 ==========================
 Liste des fonctionnalités

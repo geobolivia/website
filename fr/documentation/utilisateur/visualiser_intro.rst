@@ -1,4 +1,4 @@
-.. _`georchestra.documentation.utilisateur.visualiseur`:
+.. _`georchestra.fr.documentation.utilisateur.visualiseur`:
 
 ============================
 Visualiseur – mode d’emploi

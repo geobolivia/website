@@ -1,3 +1,5 @@
+.. _`georchestra.fr.documentation.developer.configuration`:
+
 =========================
 Georchestra configuration
 ==========================

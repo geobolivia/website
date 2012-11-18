@@ -1,4 +1,4 @@
-.. _`georchestra.documentation.search_address`:
+.. _`georchestra.fr.documentation.search_address`:
 
 ===================================================
 Préocédure d'installation du module search_address

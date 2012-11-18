@@ -1,4 +1,4 @@
-.. _`georchestra.documentation.utilisateur.edition`:
+.. _`georchestra.fr.documentation.utilisateur.edition`:
 
 ========================
 Editeur – mode d’emploi

@@ -1,4 +1,4 @@
-.. _`georchestra.download.index`:
+.. _`georchestra.fr.download.index`:
 
 ========================
 Télécharger geOrchestra

@@ -1,4 +1,4 @@
-.. _`georchestra.documentation.security`:
+.. _`georchestra.fr.documentation.security`:
 
 ==================================
 Gestion des droits et sécurité

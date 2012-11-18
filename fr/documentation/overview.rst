@@ -1,4 +1,4 @@
-.. _`georchestra.documentation.overview`:
+.. _`georchestra.fr.documentation.overview`:
 
 ============================
 Aperçu des fonctionnalités

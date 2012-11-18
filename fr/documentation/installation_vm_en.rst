@@ -1,3 +1,5 @@
+.. _`georchestra.fr.installation_vm`:
+
 geOrchestra installation guide
 ===============================
 

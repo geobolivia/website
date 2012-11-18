@@ -1,4 +1,4 @@
-.. _`georchestra.documentation.administrateur.index`:
+.. _`georchestra.fr.documentation.administrateur.index`:
 
 =============================
 Documentation administrateur

@@ -1,4 +1,4 @@
-.. _`georchestra.documentation.utilisateur.catalogue`:
+.. _`georchestra.fr.documentation.utilisateur.catalogue`:
 
 ==========================
 Catalogue – mode d’emploi

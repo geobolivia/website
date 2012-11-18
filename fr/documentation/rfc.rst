@@ -1,4 +1,4 @@
-.. _`georchestra.documentation.rfc`:
+.. _`georchestra.fr.documentation.rfc`:
 
 ====================
 Gestion des RFC

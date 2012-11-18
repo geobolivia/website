@@ -5,7 +5,7 @@
 .. http://www.source-gratuit.com/349-telecharger-template-gratuit-Delivering.html
 .. http://www.source-gratuit.com/479-telecharger-template-gratuit-Corporate-Ltd.html
         
-.. _`georchestra.index`:
+.. _`georchestra.fr.index`:
 
 .. raw:: html
   :file: slides.html

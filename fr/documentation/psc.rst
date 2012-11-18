@@ -1,4 +1,4 @@
-.. _`georchestra.documentation.psc`:
+.. _`georchestra.fr.documentation.psc`:
 
 ==================================
 Comité de Pilotage du Projet (PSC)

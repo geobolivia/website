@@ -1,4 +1,4 @@
-.. _`georchestra.documentation.faq`:
+.. _`georchestra.fr.documentation.faq`:
 
 =======
 F.A.Q.

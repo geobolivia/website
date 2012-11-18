@@ -1,4 +1,4 @@
-.. _`georchestra.documentation.utilisateur.index`:
+.. _`georchestra.fr.documentation.utilisateur.index`:
 
 ==========================
 Documentation utilisateur

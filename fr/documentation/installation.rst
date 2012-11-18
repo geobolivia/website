@@ -1,4 +1,4 @@
-.. _`georchestra.documentation.installation_fr`:
+.. _`georchestra.fr.documentation.installation`:
 
 ====================
 Guide d'installation
