@@ -40,8 +40,8 @@ Configuration module structure
 
 There were two important design goals for the configuration section
 
-1. Keep all configuration together in a single location so that new configurations can easily be created.
-1. Keep the amount of duplication and copy/paste to a minimum.
+#. Keep all configuration together in a single location so that new configurations can easily be created.
+#. Keep the amount of duplication and copy/paste to a minimum.
 
 The first goal was satisfied automatically simply by having the configuration module.  The second is a much trickier issue because one project can be very different from another, including different CSS, icons, proxies, etc...  In addition a project can have several target servers. (integration, production, dev, etc...).  Thus the following structure/build was devised:
 
@@ -66,22 +66,37 @@ Config build process
 
 When the config module builds it goes through several steps:
 
-1. Execute GenerateConfig.groovy for the target server/project.  The GenerateConfig.groovy script can generate configuration files that will be given the highest priority overall other files in the system. This is very handy when you have integration and production servers and only a few properties should be changed.  (See the GenerateConfig section for more information.)
-1. Copy files from defaults to conf/target/classes (replacing all @tag@ tags in the each file with the property in conf/target/generated/shared.maven.filters, conf/configurations/<server>/shared.maven.filters or conf/shared.maven.filters).  Files in build_support are not copied
-1. Copy files from conf/configurations/<server> to conf/target/classes (replacing tags in the same way as for defaults).  Files in build_support are not copied
-1. Copy files from conf/target/generated/ to conf/target/classes (replacing tags in the same way as for defaults).
-1. Run a script to look for any @tag@ tags in any of the files in conf/target/classes to make sure that the configuration has all the substitutions replaced correctly.  It is easy to forget to add a configuration parameter or for someone to add a new one and not update all existing configurations.  
+#. Execute GenerateConfig.groovy for the target server/project. The GenerateConfig.groovy 
+   script can generate configuration files that will be given the highest priority overall 
+   other files in the system. This is very handy when you have integration and production 
+   servers and only a few properties should be changed (See the GenerateConfig section 
+   for more information.)
+#. Copy files from defaults to conf/target/classes (replacing all @tag@ tags in the each 
+   file with the property in conf/target/generated/shared.maven.filters, 
+   conf/configurations/<server>/shared.maven.filters or conf/shared.maven.filters). Files 
+   in build_support are not copied
+#. Copy files from conf/configurations/<server> to conf/target/classes (replacing tags in 
+   the same way as for defaults).  Files in build_support are not copied
+#. Copy files from conf/target/generated/ to conf/target/classes (replacing tags in the 
+   same way as for defaults).
+#. Run a script to look for any @tag@ tags in any of the files in conf/target/classes to 
+   make sure that the configuration has all the substitutions replaced correctly. It is 
+   easy to forget to add a configuration parameter or for someone to add a new one and 
+   not update all existing configurations.  
  
 Once conf is built then the module is built.  This is also done in several steps:
 
-1. Expand the conf jar into <module>/target/conf.
-1. normal build steps
-1. When building the war, resoures in <module>/src/main/filtered-resources/ are copied to war but all ${tag} tags are replaced with the properties in <module>/target/conf/<module>/maven.filter
+#. Expand the conf jar into <module>/target/conf.
+#. normal build steps
+#. When building the war, resoures in <module>/src/main/filtered-resources/ are copied 
+   to war but all ${tag} tags are replaced with the properties in <module>/target/conf/<module>/maven.filter
 
 shared.maven.filters
 ======================
 
-When copying files from conf/defaults or conf/configurations/<server/project> or conf/target/generated each non-binary file is processed and each tag of the form @tagname@ is replaced with a property in either 
+When copying files from conf/defaults or conf/configurations/<server/project> or 
+conf/target/generated each non-binary file is processed and each tag of the form 
+@tagname@ is replaced with a property in either 
 
 * conf/target/generated/shared.maven.filters
 * conf/configurations/<server>/shared.maven.filters
