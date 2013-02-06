@@ -56,6 +56,7 @@ Liste des développeurs qui ont le droit de commit sur github (par ordre alphab�
 * Pierre Mauduit (eCairn)
 * Fabrice Phung (GeoBretagne)
 * François Van Der Biest (Camptocamp)
+* Sébastien Pelhate (GeoBretagne)
 
 
 Qui utilise geOrchestra ?
