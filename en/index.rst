@@ -85,6 +85,7 @@ geOrchestra is based on OGC standards, including:
 * `SLD <http://www.opengeospatial.org/standards/sld>`_ : Styled Layer Descriptor
 * `FE <http://www.opengeospatial.org/standards/filter>`_ : Filter Encoding
 * `CSW <http://www.opengeospatial.org/standards/cat>`_ : Catalog Service
+* `WPS <http://www.opengeospatial.org/standards/wps>`_ : Web Processing Service
 
 
 User and Developer Communities
