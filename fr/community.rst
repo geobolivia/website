@@ -41,22 +41,7 @@ Le projet dispose actuellement de 4 listes :
 Qui développe geOrchestra ?
 ===========================
 
-Liste des développeurs qui ont le droit de commit sur github (par ordre alphabétique) :
-
-* Bruno Binet (Camptocamp)
-* Mathieu Coudert (Spot Image)
-* Jesse Eichard (Camptocamp)
-* Pierre Giraud (Camptocamp)
-* Florent Gravin (Camptocamp)
-* Philippe Huet (dotGee)
-* Yves Jacolin (Camptocamp)
-* Frédéric Junod (Camptocamp)
-* Eric Lemoine (Camptocamp)
-* Sylvain Lesage (GeoBolivia)
-* Pierre Mauduit (eCairn)
-* Fabrice Phung (GeoBretagne)
-* François Van Der Biest (Camptocamp)
-* Sébastien Pelhate (GeoBretagne)
+`Liste des développeurs <https://github.com/georchestra?tab=members>`_  qui ont le droit de commit sur github.
 
 
 Qui utilise geOrchestra ?
@@ -67,8 +52,10 @@ Qui utilise geOrchestra ?
 * Infrastructure de Données Spatiales Bolivienne via `GeoBolivia <http://www.geo.gob.bo/>`_,
 * `GIP Bretagne Environnement <http://cartographie.bretagne-environnement.org/>`_,
 * Projet `VIDAE <http://geowww.agrocampus-ouest.fr/web/?page_id=103>`_ porté par l'UMR SAS INRA - Agrocampus Ouest à Rennes et l'UMR LISAH INRA - Supagro à Montpellier,
-* Laboratoire `Geomer <http://www-iuem.univ-brest.fr/recherche/equipes/geomer>`_ de l'Institut Universitaire Européen de la Mer (IUEM),
+* Laboratoire `Geomer <http://letg.univ-nantes.fr/fr/laboratoire/1/presentation>`_ de l'Institut Universitaire Européen de la Mer (IUEM),
 * INRA Champenoux,
+* Région Picardie, via le partenariat `GéoPicardie <http://www.picardie.fr/GeoPicardie>`_,
+* Région Alsace, via le partenariat `CIGAL <http://www.cigalsace.org/>`_,
 * et bien d'autres ...
 
 `Contactez nous <https://groups.google.com/group/georchestra?hl=fr>`_ pour vous faire connaître !
