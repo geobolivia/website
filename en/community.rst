@@ -39,33 +39,21 @@ We have 4 mailing lists:
 Who develop geOrchestra?
 ==========================
 
-Contributor of geOrchestra (commit right on github):
-
-* Bruno Binet (Camptocamp)
-* Mathieu Coudert (Spot Image)
-* Jesse Eichard (Camptocamp)
-* Pierre Giraud (Camptocamp)
-* Florent Gravin (Camptocamp)
-* Philippe Huet (dotGee)
-* Yves Jacolin (Camptocamp)
-* Frédéric Junod (Camptocamp)
-* Eric Lemoine (Camptocamp)
-* Sylvain Lesage (GeoBolivia)
-* Pierre Mauduit (eCairn)
-* Fabrice Phung (GeoBretagne)
-* François Van Der Biest (Camptocamp)
+`Contributors <https://github.com/georchestra?tab=members>`_ of geOrchestra (commit right on github):
 
 
 Who are using geOrchestra?
 ============================
 
-* Région Bretagne, via le partenariat `GeoBretagne <http://www.geobretagne.fr>`_,
-* Région Aquitaine, via le projet `PIGMA <http://www.pigma.org>`_ mis en place par le GIP ATGeRI,
-* Infrastructure de Données Spatiales Bolivienne via `GeoBolivia <http://www.geo.gob.bo/>`_,
+* Brittany Region, by the partnership `GeoBretagne <http://www.geobretagne.fr>`_,
+* Région Aquitaine, by the partnership `PIGMA <http://www.pigma.org>`_ mis en place par le GIP ATGeRI,
+* Bolivian Spatial Data Infrastructure, by `GeoBolivia <http://www.geo.gob.bo/>`_,
 * `GIP Bretagne Environnement <http://cartographie.bretagne-environnement.org/>`_,
-* Projet `VIDAE <http://geowww.agrocampus-ouest.fr/web/?page_id=103>`_ porté par l'UMR SAS INRA - Agrocampus Ouest à Rennes et l'UMR LISAH INRA - Supagro à Montpellier,
-* Laboratoire `Geomer <http://www-iuem.univ-brest.fr/recherche/equipes/geomer>`_ de l'Institut Universitaire Européen de la Mer (IUEM),
+* Project `VIDAE <http://geowww.agrocampus-ouest.fr/web/?page_id=103>`_ porté par l'UMR SAS INRA - Agrocampus Ouest à Rennes et l'UMR LISAH INRA - Supagro à Montpellier,
+* `Geomer <http://letg.univ-nantes.fr/fr/laboratoire/1/presentation>`_ laboratory of the European University Institute of the Sea  (IUEM),
 * INRA Champenoux,
-* et bien d'autres ...
+* Région Picardie, by the partnership `GeoPicardie <http://www.picardie.fr/GeoPicardie>`_,
+* Région Alsace, by the partnership `CIGAL <http://www.cigalsace.org/>`_,
+* and many others ...
 
 `Contact us <https://groups.google.com/group/georchestra?hl=fr>`_ to spread the world about your geOrchestra project!
