@@ -5,30 +5,25 @@ About
 ==========
 
 
-Partagez vos données avec vos partenaires
+Share your data with your partners
 ==========================================
 
-geOrchestra permet de mettre en place une infrastructure de données spatiales 
-afin de diffuser et partager des données entre partenaires ou vers un public 
-plus large (mouvement openData, directive INSPIRE).
+geOrchestra can implement a spatial data infrastructure to diffuse and share
+data between partners and to all citizens (OpenData movement, INSPIRE Directive).
 
-Ses différents modules permettent de gérer ces données : catalogue de données 
-pour chercher et connaître les données diffusées, serveur cartographique 
-pour diffuser les données sous forme de carte, extracteur pour récupérer les 
-données dans un format "standard" permettant sa réutilisation au sein d'un SIG, 
-éditeur pour modifier la donnée.
+Its various modules can manage data : Catalog to search and find the data amond 
+those wich are diffused, geospatial data server to distribute data in map form, 
+extractor to recover data in a "standard" for reuse in a GIS editor, even to
+edit the data.
 
-Ces différentes modules ont la capacité d'échanger des informations entre eux : 
-visualiseur et catalogue pour proposer les couches disponibles ou retrouver les 
-informations de métadonnées, visualiseur et serveur cartographique pour afficher 
-les données sous forme de carte.
+All the modules are able to exchange informations between each other : catalog 
+and viewer to provide available layers or retrieve metadata information, 
+geospatial data server and viewer to display data in map form.
 
-Rejoignez la communauté
+Join the community
 ========================
 
-Le projet geOrchestra est un projet communautaire, sa licence libre est un outil 
-pour mutualiser les développements entre les différents contributeurs désirant 
-s'impliquer dans le projet.
+GeOrchestra project is a community project, its free license is a way to pool
+development between the various contributors wishing to get involved in the project.
 
-C'est aussi un moyen pour réunir une communauté de clients afin de mutualiser les 
-demandes.
+It is also a way to bring a community of customers in order to share applications.
