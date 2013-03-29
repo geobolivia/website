@@ -1,7 +1,7 @@
 .. _`georchestra.fr.documentation.search_address`:
 
 ===================================================
-Préocédure d'installation du module search_address
+Procédure d'installation du module search_address
 ===================================================
 
 L'application search-address est basée sur le framework web Pylons [1]_, et 
