@@ -4,14 +4,14 @@
 F.A.Q.
 =======
 
-.. contents:: Sommaire
+.. contents:: Summary
   :local:
 
-Gouvernance
+Governance
 ============
 
-À quoi sert le PSC (Project Steering Committee) ?
---------------------------------------------------
+What is the PSC (Project Steering Committee) ?
+----------------------------------------------
 
 Le PSC est le bureau du projet : il décide des grandes orientations du projet, 
 permet de résoudre les problèmes (techniques ou non). Il est constitué de 
@@ -20,13 +20,13 @@ contributeurs majeurs de la communauté.
 Ses membres sont élus par les "committers" du projet (voir le document 
 :ref:`georchestra.en.documentation.psc` pour plus d'informations).
 
-Comment contacter le PSC (Project Steering Committee) ?
----------------------------------------------------------
+How to contact the PSC (Project Steering Committee) ?
+-----------------------------------------------------
 
 Une adresse permet de le contacter : psc chez georchestra point org.
 
-Comment obtenir un accès à la forge ?
---------------------------------------
+How to get an acces to the forge ?
+----------------------------------
 
 Le site de suivi des développements de GeOrchestra est maintenant ouvert à 
 toute personne intéressée par l'actualité du projet et sa feuille de route.
@@ -46,11 +46,11 @@ en rappelant votre identifiant, afin qu'il valide votre inscription au projet.
 http://applis-bretagne.fr/redmine/projects/show/geobretagne2 pour avoir accès à 
 l'ensemble des informations
 
-Technique
+Technical
 ==========
 
-Quels sont les standards implémentés dans geOrchestra ?
---------------------------------------------------------
+What are the standards implemented in geOrchestra ?
+---------------------------------------------------
 
 geOrchestra utilise les standards proposés par l'OGC, notamment :
 
@@ -64,8 +64,8 @@ geOrchestra utilise les standards proposés par l'OGC, notamment :
 * `CSW <http://www.opengeospatial.org/standards/cat>`_ : Catalog Service
 * `WPS <http://www.opengeospatial.org/standards/wps>`_ : Web Processing Service
 
-Quelle est cette limite de 114 Ko qui apparait parfois dans mapfishapp ?
--------------------------------------------------------------------------
+What is the limit of 114 KB which sometimes appears in MapFishApp ?
+-------------------------------------------------------------------
 
 C'est une limite dans le code javascript de la Mapfishapp, afin d'éviter des 
 traitements potentiellement trop lourds coté client. On limite volontairement la 
@@ -89,19 +89,19 @@ Pour corriger ce problème :
 * utiliser l'url avec le namespace : http://monserver/geoserver/monNamespace/wms.
 
 
-La recherche par adresse ne fonctionne pas ...
-----------------------------------------------
+Address search does not work ...
+--------------------------------
 
 Il faut installer le module :ref:`georchestra.en.documentation.search_address`.
 
-Comment brancher la recherche référentiels ?
----------------------------------------------
+How to connect research repositories ?
+--------------------------------------
 
-Voir :ref:`georchestra.en.documentation.postinstall`.
+See :ref:`georchestra.en.documentation.postinstall`.
 
 
-En mode édition, la page ralenti fortement, j'ai un message d'erreur
----------------------------------------------------------------------
+In edit mode, the page slowed sharply, I have an error message
+--------------------------------------------------------------
 
 Les performances JavaScript sont très dépendantes du navigateur web utilisé et 
 IE n'est pas réputé pour avoir d'excellentes performances en la matière. 
@@ -110,13 +110,13 @@ présentant une quantité élevée de sommets/points.
 
 Il n'y a pas de solution.
 
-Comment étendre les types de format possibles dans l'extracteur ?
-------------------------------------------------------------------
+How to extend the format types available in the extractorapp ?
+--------------------------------------------------------------
 
 Ce n'est pas possible pour le moment. Vous pouvez financer cette évolution.
 
-Impossible d’ajouter une couche raster (ecw, jpg2000, ...)
-----------------------------------------------------------
+Unable to add a raster data (ecw, jpg2000 ...)
+----------------------------------------------
 
 Il faut installer des plugins supplémentaires dans GeoServer. Voir le blog de 
 `geomatips <http://geomatips.blogspot.com/2010/02/support-de-lecw-dans-geoserver.html>`_ 
