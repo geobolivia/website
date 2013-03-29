@@ -24,15 +24,15 @@ You can read the source code in the `geOrchestra project on github <https://gith
 Packages
 =========
 
-Les archives au format WAR sont actuellement `téléchargeables <http://applis-bretagne.fr/hudson/job/georchestra//>`_ pour plusieurs modules : GeoServer, CAS, Doc, LDAP, ExtractorApp, et MapfishApp.
+WAR archives are now downloadable for several modules: GeoServer, CAS, Doc, LDAP, ExtractorApp and MapFishApp.
 
 
 Demonstration
 ===============
 
-N'hésitez pas à naviguer sur le `site de démonstration de geOrchestra <http://sdi.georchestra.org>`_ disponible en français, anglais et espagnol.
-Il s'agit là d'une intégration en continue pour évaluer toutes les nouvelles fonctionnalités.
+Feel free to browse `geOrchestra demonstration site <http://sdi.georchestra.org>`_ available in french, english and spanish.
+This is a continuous integration to evaluate all the new development.
 
-Plusieurs instances publiques de geOrchestra permettent de répondre aux besoins de démonstrations. 
+Many public instances of geOrchestra can be a good solution for demonstration. 
 
-Nous vous invitons à consulter l'`infrastructure de données spatiales de la région Bretagne <http://geobretagne.fr/accueil/>`_ ou encore celle de la `région Aquitaine <http://www.pigma.org/>`_.
+You can see for example the `spatial data infrastructure GeoBretagne <http://geobretagne.fr/accueil/>`_ or these of `region Aquitaine <http://www.pigma.org/>`_.
