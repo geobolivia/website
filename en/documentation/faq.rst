@@ -62,6 +62,7 @@ geOrchestra utilise les standards proposés par l'OGC, notamment :
 * `SLD <http://www.opengeospatial.org/standards/sld>`_ : Styled Layer Descriptor
 * `FE <http://www.opengeospatial.org/standards/filter>`_ : Filter Encoding
 * `CSW <http://www.opengeospatial.org/standards/cat>`_ : Catalog Service
+* `WPS <http://www.opengeospatial.org/standards/wps>`_ : Web Processing Service
 
 Quelle est cette limite de 114 Ko qui apparait parfois dans mapfishapp ?
 -------------------------------------------------------------------------
