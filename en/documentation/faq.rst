@@ -13,29 +13,25 @@ Governance
 What is the PSC (Project Steering Committee) ?
 ----------------------------------------------
 
-Le PSC est le bureau du projet : il décide des grandes orientations du projet, 
-permet de résoudre les problèmes (techniques ou non). Il est constitué de 
-contributeurs majeurs de la communauté.
+The PSC is the project office: it decides the broad guidelines of the project, solves problems (technical or not). 
+It is composed of the major contributors to the community.
 
-Ses membres sont élus par les "committers" du projet (voir le document 
-:ref:`georchestra.en.documentation.psc` pour plus d'informations).
+Its members are elected by project "commmitters" (see document 
+:ref:`georchestra.en.documentation.psc` fro more information).
 
 How to contact the PSC (Project Steering Committee) ?
 -----------------------------------------------------
 
-Une adresse permet de le contacter : psc chez georchestra point org.
+Its contact is : psc at georchestra point org.
 
 How to get an acces to the forge ?
 ----------------------------------
 
-Le site de suivi des développements de GeOrchestra est maintenant ouvert à 
-toute personne intéressée par l'actualité du projet et sa feuille de route.
+Site tracking developments geOrchestra is open to anyone interested in the project and its roadmap.
 
-Dans la phase actuelle de développement et jusqu'à la livraison de la version 1 
-stable, vous pouvez ainsi être informé en temps réel : annonces, soumissions 
-de bogues, modifications du code source, recette, ...
+In the current phase of development and to the delivery of version stable, you can be informed in real time: announcements, submissions bugs, source code changes, recipe ...
 
-Pour accéder à l'ensemble des ressources, trois étapes :
+To access all the resources, three steps :
 
 1. rendez-vous sur http://applis-bretagne.fr/redmine/account/register pour 
 vous enregistrer sur la plate-forme avec l'identifiant et l'adresse de 
@@ -52,7 +48,7 @@ Technical
 What are the standards implemented in geOrchestra ?
 ---------------------------------------------------
 
-geOrchestra utilise les standards proposés par l'OGC, notamment :
+geOrchestra uses the OGS standards, including :
 
 * `WMS <http://www.opengeospatial.org/standards/wms>`_ : Web Map Service
 * `WMTS <http://www.opengeospatial.org/standards/wmts>`_ : Web Map Tile Service
@@ -67,32 +63,31 @@ geOrchestra utilise les standards proposés par l'OGC, notamment :
 What is the limit of 114 KB which sometimes appears in MapFishApp ?
 -------------------------------------------------------------------
 
-C'est une limite dans le code javascript de la Mapfishapp, afin d'éviter des 
-traitements potentiellement trop lourds coté client. On limite volontairement la 
-taille des flux XML acceptable, et cette limite est évolutive selon le 
-navigateur. Exemple : IE 6 => faible capacité à parser du XML => limite basse.
+This is a limitation in the MapFishApp javascript code to avoid treatments potentially too heavy in the client. 
+We voluntarily limit the size of XML streams acceptable, and this limit is scalable depending on the browser. 
+Example: IE 6 => limited ability to parse XML => lower limit.
 
-Il y a trois raisons pour que cela arrive :
 
-* la liste de tous les codes EPSG est listée dans le GetCapabilities ;
-* toutes les couches sont dans le même namespace ou vous n'utilisez pas de 
-  namespace dans l'URL des services (http://monserver/geoserver/wms par exemple) ;
-* vous avez trop de couches dans le namespace (même raison que le point précédent).
+There are three reasons why this happens:
 
-Au final cela entraine une taille trop importante pour le fichier XML du 
-GetCapabilities.
+* all EPSG codes are listed in GetCapabilities;
+* all the layers are in the same namespace or you do not use namespace in the services URL (eg http://myserver/geoserver/wms);
+* you have too many layers in the namespace (same reason as the previous point).
 
-Pour corriger ce problème :
+In the end it leads to a too large size for the GetCapabilities XML file.
 
-* lister les codes EPSG qui doivent être disponible dans GeoServer ;
-* placer les couches dans différents namespaces ;
-* utiliser l'url avec le namespace : http://monserver/geoserver/monNamespace/wms.
+To correct this problem :
+
+* list the EPSG codes that must be available in GeoServer ;
+* place the layers in different namespaces ;
+* use the url with namespace: http://myserver/geoserver/myNamespace/wms.
 
 
 Address search does not work ...
 --------------------------------
 
-Il faut installer le module :ref:`georchestra.en.documentation.search_address`.
+You must install the module :ref:`georchestra.en.documentation.search_address`.
+
 
 How to connect research repositories ?
 --------------------------------------
@@ -103,21 +98,22 @@ See :ref:`georchestra.en.documentation.postinstall`.
 In edit mode, the page slowed sharply, I have an error message
 --------------------------------------------------------------
 
-Les performances JavaScript sont très dépendantes du navigateur web utilisé et 
-IE n'est pas réputé pour avoir d'excellentes performances en la matière. 
-Généralement on a ce problème dans l'éditeur lorsque l'on veut éditer une couche 
-présentant une quantité élevée de sommets/points.
+JavaScript performance is highly dependent on the web browser used and IE shall not be deemed to have excellent performance in this. 
+Generally you have this problem in the editor when you want to edit a layer having a high amount of vertices/points.
 
-Il n'y a pas de solution.
+There is no solution.
+
 
 How to extend the format types available in the extractorapp ?
 --------------------------------------------------------------
 
-Ce n'est pas possible pour le moment. Vous pouvez financer cette évolution.
+It's not possible at this moment.
+You can finance this development.
+
 
 Unable to add a raster data (ecw, jpg2000 ...)
 ----------------------------------------------
 
-Il faut installer des plugins supplémentaires dans GeoServer. Voir le blog de 
-`geomatips <http://geomatips.blogspot.com/2010/02/support-de-lecw-dans-geoserver.html>`_ 
-ou la documentation de GeoServer.
+You must install additionnals plugins in Geoserver.
+You can see the `geomatips blog <http://geomatips.blogspot.com/2010/02/support-de-lecw-dans-geoserver.html>`_ 
+or `Geoserver documentation <http://docs.geoserver.org/>`_.
