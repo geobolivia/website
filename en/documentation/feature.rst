@@ -1,42 +1,44 @@
 .. _`georchestra.en.documentation.feature`:
 
-==========================
-Liste des fonctionnalités
-==========================
+============
+Feature list
+============
 
-La liste présentée ici est non exhaustive.
+This list is not exhaustive.
 
-Visualiseur
-===========
+Viewer
+======
 
-* se déplacer, zoomer dans la carte
-* ajouter de nouvelles couches issue du catalogue ou d'un service WMS distant ;
-* **modifier la sémiologie** d'une couche WMS locale ou distante et sauver le style ;
-* **réaliser des requêtes sur une couche** pour filtrer les données affichées ;
-* sauver la liste des couches ouvertes, la zone de visualisation dans un fichier 
-  de contexte ;
-* lire un fichier de contexte ;
-* imprimer une carte au format PDF ;
-* visualiser la carte dans une projection européenne (compatible INSPIRE) ;
+* move, zoom in the map
+* add new layers from the catalog or from a remote WMS service ;
+* **change local or remote WMS layer semiology** and save the style ;
+* **perform queries on a layer** to filter the displayed data ;
+* saving the list of open layers, the zoom in a context file ;
+* read a file context;
+* print a map in PDF format;
+* view the map in European projection (INSPIRE compatibility);
+* addons managment.
 
-Catalogue
-==========
 
-* profile français pour les métadonnées (compatible INSPIRE) ;
-* moissoner des catalogues distants ;
-* être moissoné par un catalogue distant ;
-* gestion fine des droits de publication ;
 
-Extracteur
-===========
+Catalog
+=======
 
-* choisir une zone d'extraction ;
-* gestion des formats d'extraction (ECW, Geotiff, SHP, etc.) ;
-* gestion des couches ;
-* envoie d'un mail lorsque l'extraction est terminée.
+* link with the viewer ;
+* validation tool for INSPIRE and ISO standards ;
+* harvest remote catalogs ;
+* be harvested by a remote catalog ;
+* fine managing for the publishing rights ;
 
-Geopublisher
-=============
 
-* permettre de publier des données après téléchargement des données dans la fiche du catalogue.
+
+Extractor
+=========
+
+* choose an extraction zone ;
+* formats extraction managment (ECW, GeoTIFF, SHP, etc.) ;
+* management layers;
+* send an email when the extraction is complete.
+
+
 
