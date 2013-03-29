@@ -1,65 +1,55 @@
 .. _`georchestra.en.documentation.psc`:
 
-==================================
-Comité de Pilotage du Projet (PSC)
-==================================
+=============================
+Project Steering Comittee (PSC)
+=============================
 
 
 Introduction
 =============
 
-Qu'est-ce que geOrchestra ?
-----------------------------
+What is geOrchestra ?
+---------------------
 
-geOrchestra est une Infrastructure de Données Spatiales libre, modulaire, 
-interopérable. Elle intègre les logiciels libres GeoServer, GeoNetwork, 
-GeoWebCache, OpenLayers, GeoExt, Mapfish et s'appuie sur les services web 
-standardisés par l'OGC pour offrir à ses utilisateurs un ensemble de 
-fonctionnalités avancées.
+geOrchestra is a Spatial Data Infrastructure open, modular and interoperable. 
+It integrates the open source GeoServer, GeoNetwork, GeoWebCache, OpenLayers, GeoExt, 
+Mapfish and relies on OGC web services standards to provide its users with a set of advanced features.
 
-La philosophie de développement 
---------------------------------
 
-* urbaniser le système et respecter une architecture modulaire ;
-* Respecter au maximum les standards existants (dont OGC), tant sur les 
-  interfaces externes qu'internes (communications entre modules) ;
-* Travailler avec les communautés libres existantes, c'est à dire : privilégier 
-  la contribution à ces projets et éviter les forks ;
-* rendre publiques très tôt les sources : Forge redmine et Adullact (dépôt de 
-  sources, démos publiques, suivi ouvert des bugs, forums, etc.) ;
-* s'entourer des conseils de partenaires (Adullact) et de personnes techniques 
-  (développeurs) ;
-* méthode itérative de développements (AGILE).
+
+Development philosophy 
+----------------------
+
+* urbanize the system and follow a modular architecture ;
+* maximum respect existing standards (including OGC), both the external and internal interfaces (communication between modules);
+* working with free existing communities, ie : focus on contribution to these projects and avoid forks ;
+* make public early sources : github Forge (source repository, demos, public open bug tracking, discussion lists, etc.) ;
+* surround himself with the advice of partners (Adullact) and technical people (developers) ;
+* iterative development (AGILE).
+
 
 Responsabilité du PSC
 ======================
+This document describes how the steering committee (PSC *Project Steering Committee*) geOrchestra determines the membership 
+of a candidate, and makes decisions on all aspects of the project geOrchestra - both technical and non-technical.
 
-Ce document décrit la façon dont le comité de pilotage (PSC, *Project Steering 
-Committee*) de geOrchestra détermine l'appartenance de ses membres, et prend des 
-décisions sur tous les aspects du projet geOrchestra - à la fois techniques et 
-non techniques. 
+Examples of responsibilities of the PSC but is not exhaustive:
 
-Exemples des responsabilités dévolues au PSC sans que cela soit exhaustif :
+* manage the roadmap ;
+* technical standards and policies (eg coding standards, file naming conventions, etc. ..) ;
+* provide regular updates to the software geOrchestra ;
+* examination of RFC technical improvement of the software ;
+* infrastructure project (eg, CVS/SVN options, Bugzilla, accommodation, etc. ..) ;
+* formalization of affiliation with external entities such as OSGeo ;
+* set priorities for the project, particularly in terms of project sponsorship ;
+* the creation and supervision of sub-committees (eg infrastructure projects, training) ;
+* voting rights of commits on a proposal from the developer community.
 
-* conduite de la roadmap ;
-* élaboration de normes techniques et politiques (par exemple les normes de 
-  codage, de nommage des fichiers conventions, etc ..) ;
-* prévoir les mises à jour régulières du logiciel geOrchestra ;
-* examen des RFC d'amélioration technique du logiciel ;
-* projet d'infrastructure (par exemple, CVS / SVN options, Bugzilla, 
-  hébergement, etc ..) ;
-* formalisation d'affiliation avec des entités extérieures telles que l'OSGeo ;
-* fixer les priorités du projet, notamment en matière de projet de parrainage ;
-* la création et la supervision des sous-commissions spécialisées (par exemple 
-  des projets d'infrastructure, formation) ;
-* vote des droits de commits sur proposition de la communauté des développeurs.
+In short, the votes on the proposed project team took place on the discussion list devoted to developers 
+(see page: ref: `georchestra.en.community.index`). Proposals are available for inspection for at least two days. 
+Then the voting takes place and if there is no rejection, the motion shall be deemed accepted. 
+For more information, see: ref: `` georchestra.en.documentation.rfc.
 
-En bref, les votes sur les propositions de l'équipe de projet ont lieu sur la 
-liste dévolue aux développeurs (voir page :ref:`georchestra.en.community.index`). 
-Les propositions sont disponibles pour examen pendant au 
-moins deux jours ouvrables. Puis le vote a lieu et s'il n'y a pas de rejet, la 
-motion est considérée comme acceptée. Pour plus d'informations, voir la page 
-:ref:`georchestra.en.documentation.rfc`.
 
 Observations
 -------------
