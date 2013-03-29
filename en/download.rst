@@ -31,8 +31,8 @@ Demonstration
 ===============
 
 Feel free to browse `geOrchestra demonstration site <http://sdi.georchestra.org>`_ available in french, english and spanish.
-This is a continuous integration to evaluate all the new development.
+This is a continuous integration to evaluate all the new developments.
 
 Many public instances of geOrchestra can be a good solution for demonstration. 
 
-You can see for example the `spatial data infrastructure GeoBretagne <http://geobretagne.fr/accueil/>`_ or these of `region Aquitaine <http://www.pigma.org/>`_.
+You can see for example the `spatial data infrastructure GeoBretagne <http://geobretagne.fr/accueil/>`_ or these of `PIGMA in Aquitaine <http://www.pigma.org/>`_.
