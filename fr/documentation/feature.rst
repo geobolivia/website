@@ -18,14 +18,16 @@ Visualiseur
 * lire un fichier de contexte ;
 * imprimer une carte au format PDF ;
 * visualiser la carte dans une projection européenne (compatible INSPIRE) ;
+* gestion d'outils spécifiques.
 
 Catalogue
 ==========
 
-* profile français pour les métadonnées (compatible INSPIRE) ;
-* moissoner des catalogues distants ;
-* être moissoné par un catalogue distant ;
-* gestion fine des droits de publication ;
+* lien avec le visualiseur ;
+* outil de validation pour les normes INSPIRE et ISO ;
+* moissonner des catalogues distants ;
+* être moissonné par un catalogue distant ;
+* gestion fine des droits de publication.
 
 Extracteur
 ===========
@@ -35,8 +37,4 @@ Extracteur
 * gestion des couches ;
 * envoie d'un mail lorsque l'extraction est terminée.
 
-Geopublisher
-=============
-
-* permettre de publier des données après téléchargement des données dans la fiche du catalogue.
 
