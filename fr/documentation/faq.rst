@@ -28,23 +28,7 @@ Une adresse permet de le contacter : psc chez georchestra point org.
 Comment obtenir un accès à la forge ?
 --------------------------------------
 
-Le site de suivi des développements de GeOrchestra est maintenant ouvert à 
-toute personne intéressée par l'actualité du projet et sa feuille de route.
-
-Dans la phase actuelle de développement et jusqu'à la livraison de la version 1 
-stable, vous pouvez ainsi être informé en temps réel : annonces, soumissions 
-de bogues, modifications du code source, recette, ...
-
-Pour accéder à l'ensemble des ressources, trois étapes :
-
-1. rendez-vous sur http://applis-bretagne.fr/redmine/account/register pour 
-vous enregistrer sur la plate-forme avec l'identifiant et l'adresse de 
-messagerie de votre choix
-2. contactez les administrateurs du projet geOrchestra sur info@georchestra.org 
-en rappelant votre identifiant, afin qu'il valide votre inscription au projet.
-3. une fois la confirmation reçue par messagerie, rendez-vous sur 
-http://applis-bretagne.fr/redmine/projects/show/geobretagne2 pour avoir accès à 
-l'ensemble des informations
+Pour accéder à l'ensemble des ressources, rendez-vous sur https://github.com/georchestra
 
 Technique
 ==========
