@@ -1,36 +1,30 @@
 .. _`georchestra.en.documentation.rfc`:
 
 ====================
-Gestion des RFC
+RFC managment
 ====================
 
-Cette section détaille le fonctionnement des RFC (*Request For Comment*). Les RFC sont des propositions 
-formalisées pour proposer des modifications majeures au projet geOrchestra.
+This section describes the operation of the RFC (Request For Comment * *). 
+RFCs are formalized proposals in order to propose major changes to the geOrchestra project.
  
-Exemples de modifications qui font l'objet de RFC (voir plus bas pour une liste 
-plus précise) :
+Examples of changes which can that are RFC subject (see below for detailed list) :
 
-* fonctionnalités majeures ;
-* ré-architecture du code ;
-* améliorations du processus communautaire ;
-* propriété intellectuelle.
+* major features ;
+* code re-architecture ;
+* community process improvements;
+* intellectual property.
   
-Comment cela fonctionne
+How it works ?
 =========================
-Le cycle de vie d'une RFC est celle-ci :
+This is the RFC life cycle :
 
-1. le développeur a l'intention de réaliser une modification importante ;
-2. il communique sur la liste (voir :ref:`georchestra.en.community.index`) avec la 
-   communauté sur les modifications ; tout le monde peut commenter les 
-   propositions sur la liste, mais seuls les voix des membres du PSC seront 
-   comptées. 
-3. le développeur réalise les modifications du code ;
-4. il écrit une RFC pour détailler ses modifications et ses conséquences ;
-5. le PSC vote la RFC. Les propositions doivent être disponibles pour examen 
-   pendant au moins deux jours ouvrables avant qu'une décision finale puisse 
-   être faite. 
-6. si la RFC est acceptée, le développeur commite le code ou réalise le patch 
-   nécessaire et rédige ou modifie la documentation. 
+1. the developer intends to make a significant change ;
+2. he communicates on the list (see :ref:`georchestra.en.community.index`) with community about changes ; 
+   everyone can comment proposals on the list, but only the PSC members votes will be counted ;
+3. the developer makes changes to the code ;
+4. he writes an RFC detailing its changes and its consequences ;
+5. the PSC vote RFC. Proposals must be available for review for at least two days before a final decision can be made. 
+6. if the RFC is approved, the developer commits Code or patch necessary and make or change the documentation. 
 
 Vote d'une RFC
 ===============
