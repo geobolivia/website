@@ -4,7 +4,7 @@
 RFC managment
 ====================
 
-This section describes the operation of the RFC (Request For Comment * *). 
+This section describes the operation of the RFC (Request For Comment). 
 RFCs are formalized proposals in order to propose major changes to the geOrchestra project.
  
 Examples of changes which can that are RFC subject (see below for detailed list) :
@@ -26,64 +26,58 @@ This is the RFC life cycle :
 5. the PSC vote RFC. Proposals must be available for review for at least two days before a final decision can be made. 
 6. if the RFC is approved, the developer commits Code or patch necessary and make or change the documentation. 
 
-Vote d'une RFC
+RFC vote
 ===============
-Le PSC a la charge de voter les RFC proposées par la communauté. Le processus de 
-vote est le suivant :
+The PSC is responsible for the RFC vote proposed by the community.
+The process of voting is the following one:
 
-* chaque membre du PSC possède un vote qui peut être -1 (rejet), -0, +0, +1 
-  (acceptation) ;
-* un membre du PSC qui vote négativemenet doit fournir un minimum d'explication ;
-* un membre du PSC qui vote négativement doit proposer une solution de rechange 
-  en un temps limité ;
-* un vote de -0 indique un désaccord doux, mais n'a aucun effet. Le 0 indique 
-  l'absence d'avis. Un +0 indiquent un appui doux, mais n'a aucun effet ;
-* l'auteur de la RFC doit rédiger un minimum de retour dans sa proposition ;
-* un vote négatif est analysé pour voir comment modifier le critère bloquant 
-  pour obtenir un vote positif.
-* la proposition est considérée comme acceptée après qu'une majorité absolue a 
-  voté +1 et toutes les remarques sur les votes négatifs ont été résolues. 
-  L'auteur de la proposition doit annoncer si celle-ci est acceptée 
-  (proposition acceptée par la majorité des committers) ou s'il retire sa 
-  proposition (veto). 
+* each PSC member has one vote which can be -1 (rejection), -0, +0, +1 
+  (acceptance) ;
+* a PSC member who vote negatively must provode a minimum of explanation ;
+* a PSC member who vote negatively has to propose an alternative solution in a limited time ;
+* a vote "-0" indicates soft disagreement, but has no effect. The vote "0" indicates no opinion. 
+  A vote "+0" indicates a soft support, but has no effect ;
+* the RFC author must argue back a minimum for its proposal ;
+* a negative vote is analyzed to see how to change the blocking criterion in order to have a positive vote ;
+* the proposal is considered accepted after an absolute majority  for vote "+1" and all comments 
+  for the negative votes have been resolved.
+  The author of the proposal has to announce if this one is accepted (proposal accepted by the majority of committers) 
+  or if he removes its proposal (veto). 
 
-Le président dispose d'un vote. Il est chargé de maintenir à jour la liste des 
-membres du PSC du projet. L'ajout et la suppression d'un membre au comité de 
-pilotage, ainsi que la sélection d'un président doit être traitée comme une 
-proposition au PSC. 
+The president has a vote. It is responsible for maintaining an updated list of
+PSC members of the project. Adding and removing a PSC member, as well as the selection of a president 
+should be treated as a proposal to the PSC.
 
-Le président statue dans les cas de litiges sur un vote.
+The president rules in the cases of disputes on a vote.
 
-Une proposition ne sera acceptée que si elle reçoit +2 (y compris l'auteur) et 
-pas de veto (-1).
+A proposal will be accepted only if it receives +2 (author included) and no veto (-1).
 
-Si un veto est opposé à une proposition, et que celle-ci ne peut être revue 
-pour satisfaire l'ensemble des votants, alors la proposition peut être soumise 
-à un nouveau vote dans lequel une majorité de tous les votants éligibles 
-indiquant +1 est suffisante pour l'adopter. Notez que c'est la majorité de tous 
-les membres du PSC, et pas seulement ceux qui ont effectivement voté. 
+If a veto is opposed to a proposal, and if this proposal can't be reviewed to satisfy all voters,
+then the proposal may be submitted for another vote in which a majority of all eligible voters
+indicating "+1" is sufficient to adopt it.
+Note that it is the majority of all the PSC members, and not only those who effectively voted.
 
-Implémentation d'une RFC
+
+Implementing a RFC
 ===========================
 
-Les RFC proposées, discutées et votées sont disponible dans la section `RFC dans
-le wiki <http://csm-bretagne.fr/redmine/projects/georchestra/wiki/RFC>`_ de la 
-forge.
+The proposed, discussed and voted RFC are available in the github project 
+`geOrchestra (pull request) <https://github.com/georchestra/georchestra>`_ .
 
-Quand le vote est-il obligatoire ?
+When voting is mandatory ?
 ====================================
 
-Le vote est obligatoire dans les cas suivants :
+The vote is mandatory in the following cases :
 
-* Toute modification de la composition du comité (nouveaux membres, 
-  suppression de membres inactifs) 
-* Modifications au projet d'infrastructure (par exemple l'outil, l'emplacement 
-  ou la configuration de fond) 
-* Tout ce qui peut causer des problèmes de compatibilité descendante. 
-* Ajout des quantités importantes de nouveau code. 
-* Modification API inter-sous-système, ou des objets. 
-* Les questions de procédure. 
-* Lorsque une release doit avoir lieu. 
-* Tout en matière de relations avec des entités extérieures telles que l'OSGeo.
-* Tout ce qui pourrait être sujet à controverse.
+* Any change in the PSC composition (new members or deleting inactive members)
+* Changes to the infrastructure project (eg tool, location, main configuration)
+* Anything that can cause problems with backward compatibility.
+* Adding large contributions of new code.
+* Inter-subsystem API or objects changes.
+* Procedural matters.
+* In case of release.
+* While relations with external entities such as OSGeo.
+* Anything that might be controversial.
+
+
 
