@@ -28,18 +28,19 @@ Development philosophy
 * iterative development (AGILE).
 
 
-Responsabilité du PSC
+PSC responsibility
 ======================
+
 This document describes how the steering committee (PSC *Project Steering Committee*) geOrchestra determines the membership 
 of a candidate, and makes decisions on all aspects of the project geOrchestra - both technical and non-technical.
 
-Examples of responsibilities of the PSC but is not exhaustive:
+Examples of PSC responsibilities but is not exhaustive:
 
 * manage the roadmap ;
-* technical standards and policies (eg coding standards, file naming conventions, etc. ..) ;
+* technical standards and policies (eg coding standards, file naming conventions, etc.) ;
 * provide regular updates to the software geOrchestra ;
 * examination of RFC technical improvement of the software ;
-* infrastructure project (eg, CVS/SVN options, Bugzilla, accommodation, etc. ..) ;
+* infrastructure project (eg, CVS/SVN options, Bugzilla, accommodation, etc.) ;
 * formalization of affiliation with external entities such as OSGeo ;
 * set priorities for the project, particularly in terms of project sponsorship ;
 * the creation and supervision of sub-committees (eg infrastructure projects, training) ;
@@ -48,21 +49,20 @@ Examples of responsibilities of the PSC but is not exhaustive:
 In short, the votes on the proposed project team took place on the discussion list devoted to developers 
 (see page: ref: `georchestra.en.community.index`). Proposals are available for inspection for at least two days. 
 Then the voting takes place and if there is no rejection, the motion shall be deemed accepted. 
-For more information, see: ref: `` georchestra.en.documentation.rfc.
+For more information, see:ref:`georchestra.en.documentation.rfc`.
 
 
 Observations
 -------------
 
-Le président est l'arbitre ultime, en cas de désaccord. La règle de la majorité 
-absolue peut être utilisée pour outrepasser un veto d'obstruction, mais il est 
-prévu que dans des conditions normales, les auteurs de veto doivent être 
-convaincus de façon argumentée de retirer leur droit de veto. Le consensus est 
-privilégié. 
+The president is the final arbiter in case of disagreement. The absolute majority rule 
+can be used to override an obstruction veto, but it is expected under normal conditions, 
+the authors of veto should be argued so convinced to withdraw their veto. 
+The consensus is privileged.
 
-D'autres «comités» distincts pourront être mis en place pour gérer des 
-conférences, la documentation et les sites web. Cela dit, il est prévu que le 
-PSC soit en grande partie responsable de la création de ces comités. 
+Other "committees" may be in place to manage conferences, documentation and websites. 
+However, it is expected that the PSC is largely responsible for the creation of these committees.
+
 
 Membres du PSC
 ==============
