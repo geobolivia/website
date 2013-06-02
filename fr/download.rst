@@ -26,7 +26,7 @@ Vous pouvez visualiser les autres sous-projets en développements à partir du p
 Packages
 =========
 
-Les archives au format WAR sont actuellement `téléchargeables <http://applis-bretagne.fr/hudson/job/georchestra//>`_ pour plusieurs modules : GeoServer, CAS, Doc, LDAP, ExtractorApp, et MapfishApp.
+Les archives au format WAR sont actuellement `téléchargeables <https://sdi.georchestra.org/ci/job/georchestra-template/>`_ pour plusieurs modules : GeoServer, CAS, Doc, LDAP, ExtractorApp, et MapfishApp.
 
 
 Démonstration
