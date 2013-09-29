@@ -149,5 +149,6 @@ Les membres suivants ont été ajoutés à la PSC, après discussion et consensu
 * François Van Der Biest
 * Pierre Mauduit
 * Sylvain Lesage
+* Rod Béra
 
-Mise à jour : 02/10/2012 
+Mise à jour : 29/09/2013 
