@@ -13,7 +13,7 @@ the source doe, see below.
 Source Code
 ============
 
-Source code is available on github project: https://github.com/georchestra//georchestra/ 
+Source code is available on github project: https://github.com/georchestra/georchestra/ 
 
 In order to download source code, you need git, then clone the project::
   
