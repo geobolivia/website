@@ -13,7 +13,7 @@ Dans l'attente, nous vous recommandons d'installer à partir des sources (cf ci-
 Code source
 ============
 
-Le code source est mis à disposition sur le dépôt svn du projet : https://github.com/georchestra//georchestra/
+Le code source est mis à disposition sur le dépôt svn du projet : https://github.com/georchestra/georchestra/
 
 Pour télécharger les sources, vous devez installer git*, puis :
 
