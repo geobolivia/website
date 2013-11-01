@@ -91,13 +91,9 @@ geOrchestra repose sur les standards de l'OGC, notamment :
 Une communauté d'utilisateurs et de développeurs
 ================================================
 
-Le projet est supporté par une communauté croissante de développeurs et d'utilisateurs enthousiastes.
+Le projet est supporté par une communauté croissante de `développeurs <https://github.com/georchestra?tab=members>`_ et d'utilisateurs enthousiastes.
 
-Plusieurs sociétés fournissent également un support commercial :
-
-* `Camptocamp <http://camptocamp.com>`_ : société de service en logiciel libre, basée à Chambéry, est concepteur de la solution dans le cadre 
-  du projet `GeoBretagne <http://geobretagne.fr>`_. Camptocamp propose des offres d'intégration de l'IDS au sein de votre infrastructure, du support, mais également des prestations de développement sur mesure et des formations (utilisateurs, administrateur système et administrateur de données).
-* `DotGee <http://www.dotgee.fr/#>`_ : société basée à Rennes, offre également des prestations de support et développement sur mesure autour de l'IDS.
+`Camptocamp <http://camptocamp.com>`_ : société de service en logiciel libre, basée à Chambéry, est concepteur de la solution dans le cadre du projet `GeoBretagne <http://geobretagne.fr>`_. Camptocamp propose des offres d'intégration de l'IDS au sein de votre infrastructure, du support, mais également des prestations de développement sur mesure et des formations (utilisateurs, administrateur système et administrateur de données).
 
 .. toctree::
    :maxdepth: 2
