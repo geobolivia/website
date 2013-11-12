@@ -94,8 +94,7 @@ El proyecto es apoyado por una creciente comunidad de desarrolladores y usuarios
 
 Muchas compañías ofrecen soporte comercial:
 
-* `Camptocamp <http://camptocamp.com>`_ : empresa de servicios de software libre, con sede en Chambéry, es el diseñador de la solución del proyecto `GeoBretagne <http://geobretagne.fr>`_. Camptocamp ofrece servicios de integración con la infraestructura geOrchestra, da soporte en desarrollos
- personalizados y formación (usuarios, administradores de sistemas y administradores de datos).
+* `Camptocamp <http://camptocamp.com>`_ : empresa de servicios de software libre, con sede en Chambéry, es el diseñador de la solución del proyecto `GeoBretagne <http://geobretagne.fr>`_. Camptocamp ofrece servicios de integración con la infraestructura geOrchestra, da soporte en desarrollos personalizados y formación (usuarios, administradores de sistemas y administradores de datos).
 * `DotGee <http://www.dotgee.fr/#>`_ : empresa ubicada Rennes, ofrece una apoyo personalizado y desarrollo a medida alrededor de la plataforma geOrchestra.
 
 .. toctree::
